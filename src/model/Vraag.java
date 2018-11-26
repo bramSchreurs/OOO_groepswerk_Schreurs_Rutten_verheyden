@@ -9,6 +9,7 @@ public class Vraag {
     ArrayList correcteAntwoorden;
     ArrayList gegevenAntwoorden;
     String Feedback;
+    Enum TypeVraag;
     int score;
 
     public Vraag(String vraagString, ArrayList correcteAntwoorden, ArrayList gegevenAntwoorden, String feedback, int score) {
