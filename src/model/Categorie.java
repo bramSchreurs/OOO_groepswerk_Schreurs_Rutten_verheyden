@@ -35,6 +35,6 @@ public class Categorie {
 
     public void setVragenLijst(ArrayList vragenLijst) {
         this.vragenLijst = vragenLijst;
-        //
+        //haal vragen uit database
     }
 }

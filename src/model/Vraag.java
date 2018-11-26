@@ -3,7 +3,8 @@ package model;
 import java.util.ArrayList;
 
 public class Vraag {
-    static int vragenId = 0;
+    static int vragenIdStatic = 0;
+    int vragenId;
     String vraagString;
     ArrayList correcteAntwoorden;
     ArrayList gegevenAntwoorden;
@@ -11,8 +12,8 @@ public class Vraag {
     int score;
 
     public Vraag(String vraagString, ArrayList correcteAntwoorden, ArrayList gegevenAntwoorden, String feedback, int score) {
-        vragenId += 1;
-        setVragenId(getVragenId());
+        vragenIdStatic += 1;
+        setVragenId();
         setCorrecteAntwoorden();
         setGegevenAntwoorden();
         setFeedback(feedback);
@@ -24,8 +25,8 @@ public class Vraag {
         return vragenId;
     }
 
-    public void setVragenId(int vragenId) {
-        this.vragenId = vragenId;
+    public void setVragenId() {
+        this.vragenId = vragenIdStatic;
             }
 
     public String getVraagString() {
