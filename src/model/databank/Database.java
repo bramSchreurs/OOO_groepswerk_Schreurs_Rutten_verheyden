@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class Database {
+public class Database implements Databanken{
     private static String catLine, questLine;
     private static List<String> listCatName = new ArrayList<>();
     private static List<String> listCatDesc = new ArrayList<>();
