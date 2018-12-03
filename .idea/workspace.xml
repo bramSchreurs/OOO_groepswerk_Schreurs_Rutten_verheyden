@@ -1,28 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f48f7e6a-fa27-4d39-8977-e04a26122b25" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/model/Categorie.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Vraag.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/databank/Database.java" afterDir="false" />
+    <list default="true" id="f48f7e6a-fa27-4d39-8977-e04a26122b25" name="Default Changelist" comment="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;out/production/OOO_groepswerk/application/Main.class&#10;#&#9;out/production/OOO_groepswerk/application/MovieInventory.class&#10;#&#9;out/production/OOO_groepswerk/domain/Movie.class&#10;#&#9;out/production/OOO_groepswerk/domain/MovieCompany.class&#10;#&#9;out/production/OOO_groepswerk/ui/MovieOverview$AddDummyFilmHandler.class&#10;#&#9;out/production/OOO_groepswerk/ui/MovieOverview.class&#10;#&#9;out/production/OOO_groepswerk/view/panels/AssesMainPane.class&#10;#&#9;out/production/OOO_groepswerk/view/panels/CategoryDetailPane.class&#10;#&#9;out/production/OOO_groepswerk/view/panels/CategoryOverviewPane.class&#10;#&#9;out/production/OOO_groepswerk/view/panels/MessagePane$1.class&#10;#&#9;out/production/OOO_groepswerk/view/panels/MessagePane.class&#10;#&#9;out/production/OOO_groepswerk/view/panels/QuestionDetailPane$AddStatementListener.class&#10;#&#9;out/production/OOO_groepswerk/view/panels/QuestionDetailPane$RemoveStatementListener.class&#10;#&#9;out/production/OOO_groepswerk/view/panels/QuestionDetailPane.class&#10;#&#9;out/production/OOO_groepswerk/view/panels/QuestionOverviewPane.class&#10;#&#9;out/production/OOO_groepswerk/view/panels/TestPane.class">
+      <change afterPath="$PROJECT_DIR$/out/production/OOO_groepswerk/controller/SelfTestController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/SelfTestController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Categories.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOO_groepswerk/application/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOO_groepswerk/application/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOO_groepswerk/application/MovieInventory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOO_groepswerk/application/MovieInventory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOO_groepswerk/domain/Movie.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOO_groepswerk/domain/Movie.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOO_groepswerk/domain/MovieCompany.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOO_groepswerk/domain/MovieCompany.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOO_groepswerk/ui/MovieOverview$AddDummyFilmHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOO_groepswerk/ui/MovieOverview$AddDummyFilmHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOO_groepswerk/ui/MovieOverview.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOO_groepswerk/ui/MovieOverview.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOO_groepswerk/view/panels/AssesMainPane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOO_groepswerk/view/panels/AssesMainPane.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOO_groepswerk/view/panels/CategoryDetailPane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOO_groepswerk/view/panels/CategoryDetailPane.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOO_groepswerk/model/Categorie.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOO_groepswerk/model/Categorie.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOO_groepswerk/model/FeedbackWijze.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOO_groepswerk/model/FeedbackWijze.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOO_groepswerk/model/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOO_groepswerk/model/Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOO_groepswerk/model/Vraag.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOO_groepswerk/model/Vraag.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOO_groepswerk/model/VraagType.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOO_groepswerk/model/VraagType.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/OOO_groepswerk/view/panels/CategoryOverviewPane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOO_groepswerk/view/panels/CategoryOverviewPane.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOO_groepswerk/view/panels/MessagePane$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOO_groepswerk/view/panels/MessagePane$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOO_groepswerk/view/panels/MessagePane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOO_groepswerk/view/panels/MessagePane.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOO_groepswerk/view/panels/QuestionDetailPane$AddStatementListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOO_groepswerk/view/panels/QuestionDetailPane$AddStatementListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOO_groepswerk/view/panels/QuestionDetailPane$RemoveStatementListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOO_groepswerk/view/panels/QuestionDetailPane$RemoveStatementListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOO_groepswerk/view/panels/QuestionDetailPane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOO_groepswerk/view/panels/QuestionDetailPane.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOO_groepswerk/view/panels/QuestionOverviewPane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOO_groepswerk/view/panels/QuestionOverviewPane.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOO_groepswerk/view/panels/TestPane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOO_groepswerk/view/panels/TestPane.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/panels/CategoryOverviewPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/panels/CategoryOverviewPane.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,36 +24,38 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="gitignore" value="1" />
-          <entry key="java" value="9" />
-          <entry key="txt" value="1" />
+          <entry key="java" value="11" />
+          <entry key="txt" value="2" />
           <entry key="xml" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="9" />
-          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="JAVA" value="11" />
+          <entry key="PLAIN_TEXT" value="3" />
           <entry key="XML" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="6" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.11" value="2" />
+          <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.46" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.open.time.59" value="1" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="185" />
+          <entry key="java" value="928" />
           <entry key="txt" value="29" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="185" />
+          <entry key="JAVA" value="928" />
           <entry key="PLAIN_TEXT" value="29" />
         </counts>
       </usages-collector>
@@ -72,58 +63,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/domain/Movie.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/model/databank/Database.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            <state relative-caret-position="288">
+              <caret line="29" column="37" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/domain/MovieCompany.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ui/MovieOverview.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/application/MovieInventory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/TextFiles/Categories.txt">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/application/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/view/panels/CategoryOverviewPane.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+            <state relative-caret-position="612">
+              <caret line="47" column="34" selection-start-line="47" selection-start-column="34" selection-end-line="47" selection-end-column="34" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#1472#1473#0" expanded="true" />
+                <element signature="e#1491#1492#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -139,6 +103,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/view/panels/CategoryOverviewPane.java" />
+        <option value="$PROJECT_DIR$/src/model/databank/Database.java" />
       </list>
     </option>
   </component>
@@ -162,6 +127,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -190,27 +156,42 @@
               <item name="OOO_groepswerk_Schreurs_Rutten_verheyden" type="b2602c69:ProjectViewProjectNode" />
               <item name="OOO_groepswerk_Schreurs_Rutten_verheyden" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OOO_groepswerk_Schreurs_Rutten_verheyden" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OOO_groepswerk_Schreurs_Rutten_verheyden" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="databank" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OOO_groepswerk_Schreurs_Rutten_verheyden" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OOO_groepswerk_Schreurs_Rutten_verheyden" type="462c0819:PsiDirectoryNode" />
+              <item name="TextFiles" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543250414623" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543253963534" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../school shit/BS2/processScheduling" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Kasper\Desktop\bureau\Documents\GitHub\OOO_groepswerk_Schreurs_Rutten_verheyden\TextFiles" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Kasper\Desktop\bureau\Documents\GitHub\OOO_groepswerk_Schreurs_Rutten_verheyden\TextFiles" />
       <recent name="C:\Users\Kasper\Desktop\bureau\Documents\GitHub\OOO_groepswerk_Schreurs_Rutten_verheyden" />
     </key>
   </component>
@@ -226,7 +207,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.Database">
+    <configuration name="Database" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="model.databank.Database" />
+      <module name="OOO_groepswerk" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="model.databank.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="application.Main" />
       <module name="OOO_groepswerk" />
@@ -256,9 +250,11 @@
     <list>
       <item itemvalue="Application.Main" />
       <item itemvalue="Application.MovieInventory" />
+      <item itemvalue="Application.Database" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Database" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.MovieInventory" />
       </list>
@@ -279,7 +275,9 @@
       <workItem from="1542647692675" duration="542000" />
       <workItem from="1542812635000" duration="111000" />
       <workItem from="1543246960926" duration="3461000" />
-      <workItem from="1543250481331" duration="478000" />
+      <workItem from="1543250481331" duration="3479000" />
+      <workItem from="1543416056005" duration="48000" />
+      <workItem from="1543848310030" duration="872000" />
     </task>
     <task id="LOCAL-00001" summary="Categories.txt toegevoegd">
       <created>1543249080792</created>
@@ -302,17 +300,23 @@
       <option name="project" value="LOCAL" />
       <updated>1543249325721</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;out/production/OOO_groepswerk/application/Main.class&#10;#&#9;out/production/OOO_groepswerk/application/MovieInventory.class&#10;#&#9;out/production/OOO_groepswerk/domain/Movie.class&#10;#&#9;out/production/OOO_groepswerk/domain/MovieCompany.class&#10;#&#9;out/production/OOO_groepswerk/ui/MovieOverview$AddDummyFilmHandler.class&#10;#&#9;out/production/OOO_groepswerk/ui/MovieOverview.class&#10;#&#9;out/production/OOO_groepswerk/view/panels/AssesMainPane.class&#10;#&#9;out/production/OOO_groepswerk/view/panels/CategoryDetailPane.class&#10;#&#9;out/production/OOO_groepswerk/view/panels/CategoryOverviewPane.class&#10;#&#9;out/production/OOO_groepswerk/view/panels/MessagePane$1.class&#10;#&#9;out/production/OOO_groepswerk/view/panels/MessagePane.class&#10;#&#9;out/production/OOO_groepswerk/view/panels/QuestionDetailPane$AddStatementListener.class&#10;#&#9;out/production/OOO_groepswerk/view/panels/QuestionDetailPane$RemoveStatementListener.class&#10;#&#9;out/production/OOO_groepswerk/view/panels/QuestionDetailPane.class&#10;#&#9;out/production/OOO_groepswerk/view/panels/QuestionOverviewPane.class&#10;#&#9;out/production/OOO_groepswerk/view/panels/TestPane.class">
+      <created>1543250989515</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1543250989515</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6389000" />
+    <option name="totallyTimeSpent" value="10310000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2655068" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2730711" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -321,15 +325,15 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32569557" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" weight="0.32569557" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.3289689" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="7" sideWeight="0.4977307" visible="true" weight="0.3289689" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" visible="true" weight="0.3289689" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50226927" side_tool="true" visible="true" weight="0.3289689" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.3289689" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -411,19 +415,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/view/panels/CategoryOverviewPane.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+        <state relative-caret-position="306">
+          <caret line="18" column="4" lean-forward="true" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/panels/CategoryOverviewPane.java">
+    <entry file="file://$PROJECT_DIR$/src/model/databank/Database.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+        <state relative-caret-position="288">
+          <caret line="29" column="37" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TextFiles/Categories.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="47" column="34" selection-start-line="47" selection-start-column="34" selection-end-line="47" selection-end-column="34" />
+          <folding>
+            <element signature="e#1472#1473#0" expanded="true" />
+            <element signature="e#1491#1492#0" expanded="true" />
           </folding>
         </state>
       </provider>

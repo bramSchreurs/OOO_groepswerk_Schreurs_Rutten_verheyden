@@ -32,6 +32,7 @@ public class CategoryOverviewPane extends GridPane {
         TableColumn descriptionCol = new TableColumn<>("Description");
         descriptionCol.setCellValueFactory(new PropertyValueFactory("description"));
         table.getColumns().add(descriptionCol);
+
 		this.add(table, 0, 1, 2, 6);
 		
 		btnNew = new Button("New");
