@@ -7,12 +7,12 @@ public class Vraag {
     int vragenId;
     String vraagString;
     ArrayList correcteAntwoorden;
-    ArrayList gegevenAntwoorden;
+    ArrayList mogelijkeAntwoorden;
     String Feedback;
     Enum TypeVraag;
     int score;
 
-    public Vraag(String vraagString, ArrayList correcteAntwoorden, ArrayList gegevenAntwoorden, String feedback, int score) {
+    public Vraag(String vraagString, ArrayList correcteAntwoorden, ArrayList mogelijkeAntwoorden, String feedback, int score) {
         vragenIdStatic += 1;
         setVragenId();
         setCorrecteAntwoorden();
@@ -46,12 +46,12 @@ public class Vraag {
         this.correcteAntwoorden = new ArrayList<String>();
     }
 
-    public ArrayList getGegevenAntwoorden() {
-        return gegevenAntwoorden;
+    public ArrayList getMogelijkeAntwoorden() {
+        return mogelijkeAntwoorden;
     }
 
     public void setGegevenAntwoorden() {
-        this.gegevenAntwoorden = new ArrayList<String>();
+        this.mogelijkeAntwoorden = new ArrayList<String>();
     }
 
     public String getFeedback() {
