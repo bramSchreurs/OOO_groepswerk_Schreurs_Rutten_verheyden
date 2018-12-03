@@ -8,9 +8,11 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Database {
-    private static String name, description, question, answer;
+    private static String catLine, questLine;
     private static List<String> listCatName = new ArrayList<>();
     private static List<String> listCatDesc = new ArrayList<>();
+    private static List<String> listQuestQuest = new ArrayList<>();
+    private static List<String> listQuestAns = new ArrayList<>();
     public Database() {
 
 
@@ -21,34 +23,49 @@ public class Database {
         Scanner scanCat = null;
         try {
             scanCat = new Scanner(cat);
-            scanCat.useDelimiter("::");
-            while(scanCat.hasNextLine()) {
-                listCatName.add(scanCat.next());
-                listCatDesc.add(scanCat.next());
-                scanCat.nextLine();
-            }
-            System.out.println("All names:");
-            for (String n : listCatName){
-                System.out.println("\n" + n);
-            }
-            System.out.println("All descriptions:");
-            for (String d : listCatDesc){
-                System.out.println("\n" + d);
+            while (scanCat.hasNext()){
+                catLine = scanCat.nextLine();
+                String[] parts = catLine.split("::", 2);
+                listCatName.add(parts[0]);
+                listCatDesc.add(parts[1]);
             }
 
-            /*scanCat = new Scanner(cat);
-            scanCat.useDelimiter("::");
-            System.out.println(scanCat.next());
-            scanCat.delimiter();
-            System.out.println(scanCat.next());*/
+            System.out.println("\nAll names:\n");
+            for (String n : listCatName){
+                System.out.println(n);
+            }
+            System.out.println("\nAll descriptions:\n");
+            for (String d : listCatDesc){
+                System.out.println(d);
+            }
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
         scanCat.close();
 
+        File quest = new File("TextFiles\\Questions.txt");
+        Scanner scanQuest = null;
+        try {
+            scanQuest = new Scanner(quest);
+            while (scanQuest.hasNext()){
+                questLine = scanQuest.nextLine();
+                String[] parts = questLine.split("::", 2);
+                listQuestQuest.add(parts[0]);
+                listQuestAns.add(parts[1]);
+            }
+
+            System.out.println("\nAll questions:\n");
+            for (String n : listQuestQuest){
+                System.out.println(n);
+            }
+            System.out.println("\nAll answers:\n");
+            for (String d : listQuestAns){
+                System.out.println(d);
+            }
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
 
     }
-
-
 
 }
