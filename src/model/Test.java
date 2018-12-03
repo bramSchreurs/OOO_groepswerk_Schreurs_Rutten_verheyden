@@ -4,10 +4,10 @@ import java.util.ArrayList;
 
 import static model.FeedbackWijze.*;
 
-public class Test {
+public class Test implements Subject{
     String naam;
-    ArrayList categorieën;
-    ArrayList vragen;
+    ArrayList<Categorie> categorieën;
+    ArrayList<Vraag> vragen;
     Enum feedbackWijze;
 
     public Test(String naam){
@@ -32,7 +32,7 @@ public class Test {
         this.naam = naam;
     }
 
-    public ArrayList getCategorieën() {
+    public ArrayList<Categorie> getCategorieën() {
         return categorieën;
     }
 
@@ -40,7 +40,7 @@ public class Test {
         this.categorieën = categorieën;
     }
 
-    public ArrayList getVragen() {
+    public ArrayList<Vraag> getVragen() {
         return vragen;
     }
 
@@ -49,5 +49,20 @@ public class Test {
     }
     public void setFeedbackWijze(Enum FeedbackWijze){
         this.feedbackWijze = FeedbackWijze;
+    }
+
+    @Override
+    public void addObserver(Observer observer) {
+
+    }
+
+    @Override
+    public void removeObserver(Observer observer) {
+
+    }
+
+    @Override
+    public void notifyObservers() {
+
     }
 }
