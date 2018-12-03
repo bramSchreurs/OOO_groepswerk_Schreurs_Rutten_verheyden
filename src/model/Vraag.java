@@ -71,6 +71,7 @@ public class Vraag {
     }
 
     public void addVraagToDatabase(){
+        //lorem ipsum
 
     }
 

@@ -10,6 +10,8 @@ public class Database {
     private static List<String> listCatDesc = new ArrayList<>();
     public Database() {
 
+
+        //gebruik Singleton
     }
     public static void main(String[] args){
         Scanner scanCat = new Scanner("\\TextFiles\\Categories.txt");
@@ -30,6 +32,7 @@ public class Database {
         for (String d : listCatDesc){
             System.out.println("\n" + d);
         }*/
+
 
 
     }
