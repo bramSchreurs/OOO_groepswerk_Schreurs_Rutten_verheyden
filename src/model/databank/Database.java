@@ -7,12 +7,13 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class Database {
+public class Database implements Databanken{
     private static String catLine, questLine;
     private static List<String> listCatName = new ArrayList<>();
     private static List<String> listCatDesc = new ArrayList<>();
     private static List<String> listQuestQuest = new ArrayList<>();
     private static List<String> listQuestAns = new ArrayList<>();
+    private static List<String> listQuestPosAns = new ArrayList<>();
     public Database() {
 
 
@@ -49,9 +50,10 @@ public class Database {
             scanQuest = new Scanner(quest);
             while (scanQuest.hasNext()){
                 questLine = scanQuest.nextLine();
-                String[] parts = questLine.split("::", 2);
+                String[] parts = questLine.split("::", 3);
                 listQuestQuest.add(parts[0]);
-                listQuestAns.add(parts[1]);
+                listQuestPosAns.add(parts[1]);
+                listQuestAns.add(parts[2]);
             }
 
             System.out.println("\nAll questions:\n");
@@ -62,9 +64,14 @@ public class Database {
             for (String d : listQuestAns){
                 System.out.println(d);
             }
+            System.out.println("\nAll possible answers:\n");
+            for (String d : listQuestPosAns){
+                System.out.println(d);
+            }
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
+        scanQuest.close();
 
     }
 

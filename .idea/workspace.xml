@@ -2,16 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f48f7e6a-fa27-4d39-8977-e04a26122b25" name="Default Changelist" comment="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;out/production/OOO_groepswerk/application/Main.class&#10;#&#9;out/production/OOO_groepswerk/application/MovieInventory.class&#10;#&#9;out/production/OOO_groepswerk/domain/Movie.class&#10;#&#9;out/production/OOO_groepswerk/domain/MovieCompany.class&#10;#&#9;out/production/OOO_groepswerk/ui/MovieOverview$AddDummyFilmHandler.class&#10;#&#9;out/production/OOO_groepswerk/ui/MovieOverview.class&#10;#&#9;out/production/OOO_groepswerk/view/panels/AssesMainPane.class&#10;#&#9;out/production/OOO_groepswerk/view/panels/CategoryDetailPane.class&#10;#&#9;out/production/OOO_groepswerk/view/panels/CategoryOverviewPane.class&#10;#&#9;out/production/OOO_groepswerk/view/panels/MessagePane$1.class&#10;#&#9;out/production/OOO_groepswerk/view/panels/MessagePane.class&#10;#&#9;out/production/OOO_groepswerk/view/panels/QuestionDetailPane$AddStatementListener.class&#10;#&#9;out/production/OOO_groepswerk/view/panels/QuestionDetailPane$RemoveStatementListener.class&#10;#&#9;out/production/OOO_groepswerk/view/panels/QuestionDetailPane.class&#10;#&#9;out/production/OOO_groepswerk/view/panels/QuestionOverviewPane.class&#10;#&#9;out/production/OOO_groepswerk/view/panels/TestPane.class">
-      <change afterPath="$PROJECT_DIR$/out/production/OOO_groepswerk/controller/SelfTestController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/SelfTestController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOO_groepswerk/model/Categorie.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOO_groepswerk/model/Categorie.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TextFiles/Questions.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TextFiles/Questions.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/OOO_groepswerk/model/FeedbackWijze.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOO_groepswerk/model/FeedbackWijze.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOO_groepswerk/model/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOO_groepswerk/model/Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOO_groepswerk/model/Vraag.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOO_groepswerk/model/Vraag.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOO_groepswerk/model/VraagType.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOO_groepswerk/model/VraagType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOO_groepswerk/view/panels/CategoryOverviewPane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOO_groepswerk/view/panels/CategoryOverviewPane.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/panels/CategoryOverviewPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/panels/CategoryOverviewPane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOO_groepswerk/model/databank/Databanken.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOO_groepswerk/model/databank/Databanken.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOO_groepswerk/model/databank/Database.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOO_groepswerk/model/databank/Database.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/databank/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/databank/Database.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -60,14 +56,54 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="277833947">
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="23" />
+          <entry key="txt" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="23" />
+          <entry key="PLAIN_TEXT" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="678" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="678" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.21" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/model/databank/Database.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/view/panels/QuestionOverviewPane.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="29" column="37" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
+            <state relative-caret-position="172">
+              <caret line="36" column="8" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/view/panels/CategoryOverviewPane.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="34" selection-start-line="34" selection-end-line="34" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -76,24 +112,89 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TextFiles/Categories.txt">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/src/controller/SelfTestController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="125">
+              <caret line="63" selection-start-line="63" selection-end-line="63" />
+            </state>
+          </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/application/Main.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/model/databank/Database.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="47" column="34" selection-start-line="47" selection-start-column="34" selection-end-line="47" selection-end-column="34" />
+            <state relative-caret-position="204">
+              <caret line="12" column="64" lean-forward="true" selection-start-line="12" selection-start-column="64" selection-end-line="12" selection-end-column="64" />
               <folding>
-                <element signature="e#1472#1473#0" expanded="true" />
-                <element signature="e#1491#1492#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/model/databank/Databanken.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/model/EvaluatieVormScore.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/model/TestFacade.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/model/Test.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="42" column="26" selection-start-line="42" selection-start-column="26" selection-end-line="42" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/view/panels/AssesMainPane.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="23" selection-start-line="23" selection-end-line="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/model/Categorie.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="459">
+              <caret line="37" column="34" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="UPDATE_TYPE" value="MERGE" />
@@ -103,7 +204,16 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/view/panels/CategoryOverviewPane.java" />
+        <option value="$PROJECT_DIR$/src/model/Subject.java" />
+        <option value="$PROJECT_DIR$/src/model/Observer.java" />
+        <option value="$PROJECT_DIR$/src/model/EvaluatieVorm.java" />
+        <option value="$PROJECT_DIR$/src/model/EvaluatieVormFeedback.java" />
+        <option value="$PROJECT_DIR$/src/model/EvaluatieVormScore.java" />
         <option value="$PROJECT_DIR$/src/model/databank/Database.java" />
+        <option value="$PROJECT_DIR$/src/model/Vraag.java" />
+        <option value="$PROJECT_DIR$/src/model/Test.java" />
+        <option value="$PROJECT_DIR$/src/controller/SelfTestController.java" />
+        <option value="$PROJECT_DIR$/src/view/panels/QuestionOverviewPane.java" />
       </list>
     </option>
   </component>
@@ -119,7 +229,7 @@
     <option name="width" value="1614" />
     <option name="height" value="876" />
   </component>
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
@@ -127,61 +237,78 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="OOO_groepswerk_Schreurs_Rutten_verheyden" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OOO_groepswerk_Schreurs_Rutten_verheyden" type="462c0819:PsiDirectoryNode" />
+              <item name="OOO_groepswerk" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OOO_groepswerk" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="OOO_groepswerk_Schreurs_Rutten_verheyden" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OOO_groepswerk_Schreurs_Rutten_verheyden" type="462c0819:PsiDirectoryNode" />
+              <item name="OOO_groepswerk" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OOO_groepswerk" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OOO_groepswerk" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OOO_groepswerk" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="OOO_groepswerk_Schreurs_Rutten_verheyden" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OOO_groepswerk_Schreurs_Rutten_verheyden" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="OOO_groepswerk_Schreurs_Rutten_verheyden" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OOO_groepswerk_Schreurs_Rutten_verheyden" type="462c0819:PsiDirectoryNode" />
+              <item name="OOO_groepswerk" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OOO_groepswerk" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="application" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="OOO_groepswerk_Schreurs_Rutten_verheyden" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OOO_groepswerk_Schreurs_Rutten_verheyden" type="462c0819:PsiDirectoryNode" />
+              <item name="OOO_groepswerk" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OOO_groepswerk" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OOO_groepswerk" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OOO_groepswerk" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OOO_groepswerk" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OOO_groepswerk" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="OOO_groepswerk_Schreurs_Rutten_verheyden" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OOO_groepswerk_Schreurs_Rutten_verheyden" type="462c0819:PsiDirectoryNode" />
+              <item name="OOO_groepswerk" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OOO_groepswerk" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
               <item name="databank" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="OOO_groepswerk_Schreurs_Rutten_verheyden" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OOO_groepswerk_Schreurs_Rutten_verheyden" type="462c0819:PsiDirectoryNode" />
+              <item name="OOO_groepswerk" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OOO_groepswerk" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="panels" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OOO_groepswerk" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OOO_groepswerk" type="462c0819:PsiDirectoryNode" />
               <item name="TextFiles" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543253963534" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../school shit/BS2/processScheduling" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544458574948" />
+    <property name="last_opened_file_path" value="C:/../school shit/BS2/processScheduling" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -207,7 +334,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Database">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Database" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="model.databank.Database" />
       <module name="OOO_groepswerk" />
@@ -254,8 +381,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Database" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Database" />
         <item itemvalue="Application.MovieInventory" />
       </list>
     </recent_temporary>
@@ -278,6 +405,7 @@
       <workItem from="1543250481331" duration="3479000" />
       <workItem from="1543416056005" duration="48000" />
       <workItem from="1543848310030" duration="872000" />
+      <workItem from="1544456426906" duration="2015000" />
     </task>
     <task id="LOCAL-00001" summary="Categories.txt toegevoegd">
       <created>1543249080792</created>
@@ -311,12 +439,21 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10310000" />
+    <option name="totallyTimeSpent" value="20590000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2730711" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2874494" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -325,15 +462,15 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" weight="0.32569557" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4979757" visible="true" weight="0.3250444" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="7" sideWeight="0.4977307" visible="true" weight="0.3289689" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3285968" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.4977307" weight="0.3285968" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50226927" side_tool="true" visible="true" weight="0.3289689" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3285968" />
+      <window_info active="true" anchor="bottom" id="Event Log" order="10" sideWeight="0.5020243" side_tool="true" visible="true" weight="0.3250444" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.3289689" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -415,29 +552,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/panels/CategoryOverviewPane.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="4" lean-forward="true" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/databank/Database.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="29" column="37" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TextFiles/Categories.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/application/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
@@ -445,6 +559,166 @@
           <folding>
             <element signature="e#1472#1473#0" expanded="true" />
             <element signature="e#1491#1492#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/panels/TestPane.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/panels/QuestionDetailPane.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/panels/MessagePane.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Observer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/EvaluatieVorm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Subject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="34" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TextFiles/Categories.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/FeedbackWijze.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/EvaluatieVormFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/EvaluatieVormFeedback.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#125#126#0" expanded="true" />
+            <element signature="e#152#153#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Vraag.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/VraagType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/EvaluatieVormScore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/TestFacade.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="42" column="26" selection-start-line="42" selection-start-column="26" selection-end-line="42" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/panels/AssesMainPane.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Categorie.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="37" column="34" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/panels/CategoryOverviewPane.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/panels/QuestionOverviewPane.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="36" column="8" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/SelfTestController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="63" selection-start-line="63" selection-end-line="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/databank/Databanken.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/databank/Database.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="64" lean-forward="true" selection-start-line="12" selection-start-column="64" selection-end-line="12" selection-end-column="64" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

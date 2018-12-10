@@ -1,2 +1,2 @@
-Welk patroon definieert een familie van algoritmes, kapselt ze in en maakt ze verwisselbaar?::kaas, kaas
-Welk ontwerp principe is het minst van toepassing op het Strategy patroon?::worst
+Welk patroon definieert een familie van algoritmes, kapselt ze in en maakt ze verwisselbaar?::camembert, comté, geitenkaas, brie::camembert, brie
+Welk ontwerp principe is het minst van toepassing op het Strategy patroon?::worst, pens::worst
