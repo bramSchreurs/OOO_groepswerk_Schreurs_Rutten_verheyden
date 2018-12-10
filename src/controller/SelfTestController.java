@@ -4,24 +4,24 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import model.Test;
 import model.Vraag;
-import model.databank.Database;
+import model.databank.DatabaseWithtxt;
 import view.panels.CategoryOverviewPane;
 import view.panels.QuestionOverviewPane;
 
 import java.util.ArrayList;
 
 public class SelfTestController {
-    Database database;
+    DatabaseWithtxt database;
     Test test;
     CategoryOverviewPane categorieOverviewPane;
     QuestionOverviewPane questionOverviewPane;
 
-    public SelfTestController(Database database){
+    public SelfTestController(DatabaseWithtxt database){
         setDatabase(database);
         setTest(test);
     }
 
-    public void setDatabase(Database database) {
+    public void setDatabase(DatabaseWithtxt database) {
         this.database = database;
     }
 
@@ -29,7 +29,7 @@ public class SelfTestController {
         this.test = test;
     }
 
-    public Database getDatabase() {
+    public DatabaseWithtxt getDatabase() {
         return this.database;
     }
 
