@@ -58,11 +58,12 @@ public class SelfTestController {
         ArrayList<String> kaas = new ArrayList<String>();
         ArrayList<String> worst = new ArrayList<String>();
         for (Vraag vraag:test.getVragen()) {
+            list.add(vraag);
 
         }
-        list.add(new Vraag("kaas",kaas,worst,"feedback",0));
+
         
-        return null;
+        return list;
 
     }
 }
