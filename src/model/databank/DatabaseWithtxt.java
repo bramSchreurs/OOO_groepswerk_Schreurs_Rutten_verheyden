@@ -11,14 +11,14 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class Database implements Databanken{
+public class DatabaseWithtxt implements Databanken{
     private static String catLine, questLine;
     private static List<String> listCatName = new ArrayList<>();
     private static List<String> listCatDesc = new ArrayList<>();
     private static List<String> listQuestQuest = new ArrayList<>();
     private static List<String> listQuestAns = new ArrayList<>();
     private static List<String> listQuestPosAns = new ArrayList<>();
-    public Database() {
+    public DatabaseWithtxt() {
 
 
         //gebruik Singleton
