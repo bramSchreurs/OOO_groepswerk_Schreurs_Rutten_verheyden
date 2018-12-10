@@ -37,6 +37,7 @@ public class CategoryOverviewPane extends GridPane {
 		
 		btnNew = new Button("New");
 		this.add(btnNew, 0, 11, 1, 1);
+		//btnNew.setOnAction();
 	}
 	
 	public void setNewAction(EventHandler<ActionEvent> newAction) {

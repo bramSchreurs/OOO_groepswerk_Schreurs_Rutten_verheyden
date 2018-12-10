@@ -11,11 +11,12 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.GridPane;
+import model.databank.Database;
 
 public class QuestionOverviewPane extends GridPane {
 	private TableView table;
 	private Button btnNew;
-	private SelfTestController controller;
+	private SelfTestController controller = new SelfTestController(new Database());
 	
 	public QuestionOverviewPane() {
 
@@ -28,10 +29,10 @@ public class QuestionOverviewPane extends GridPane {
 		table = new TableView<>();
 		table.setPrefWidth(REMAINING);
         TableColumn nameCol = new TableColumn<>("Question");
-        nameCol.setCellValueFactory(new PropertyValueFactory<>("question"));
+        nameCol.setCellValueFactory(new PropertyValueFactory<>("vraagString"));
         table.getColumns().add(nameCol);
         TableColumn descriptionCol = new TableColumn<>("Category");
-        descriptionCol.setCellValueFactory(new PropertyValueFactory("category"));
+        descriptionCol.setCellValueFactory(new PropertyValueFactory("feedback"));
         table.getColumns().add(descriptionCol);
 		this.add(table, 0, 1, 2, 6);
 		table.setItems(getController().getTableItems());

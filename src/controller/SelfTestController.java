@@ -12,7 +12,7 @@ import java.util.ArrayList;
 
 public class SelfTestController {
     Database database;
-    Test test;
+    Test test = new Test("kaas");
     CategoryOverviewPane categorieOverviewPane;
     QuestionOverviewPane questionOverviewPane;
 
@@ -54,6 +54,13 @@ public class SelfTestController {
     }
 
     public ObservableList<Vraag> getTableItems(){
+        ArrayList<String> boereworst = new ArrayList<String>();
+        boereworst.add("kaas");
+        ArrayList<String> kop = new ArrayList<String>();
+        kop.add("kaas");
+        kop.add("worst");
+        kop.add("kop");
+        test.addVraag(new Vraag("sport", boereworst,kop, "kaasraps", 0));
         ObservableList list = FXCollections.observableArrayList();
         ArrayList<String> kaas = new ArrayList<String>();
         ArrayList<String> worst = new ArrayList<String>();
