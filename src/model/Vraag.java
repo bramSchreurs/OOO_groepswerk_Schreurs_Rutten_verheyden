@@ -20,6 +20,7 @@ public class Vraag {
         setFeedback(feedback);
         setScore(score);
         addVraagToDatabase();
+        setVraagString(vraagString);
     }
 
     public int getVragenId() {
