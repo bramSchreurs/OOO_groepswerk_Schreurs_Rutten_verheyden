@@ -2,6 +2,7 @@ package controller;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import model.Categorie;
 import model.Test;
 import model.Vraag;
 import model.databank.DatabaseWithtxt;
@@ -12,7 +13,7 @@ import java.util.ArrayList;
 
 public class SelfTestController {
     DatabaseWithtxt database;
-    Test test;
+    Test test = new Test("voedseltest");
     CategoryOverviewPane categorieOverviewPane;
     QuestionOverviewPane questionOverviewPane;
 
@@ -55,14 +56,39 @@ public class SelfTestController {
 
     public ObservableList<Vraag> getTableItems(){
         ObservableList list = FXCollections.observableArrayList();
+        Categorie categorie = new Categorie("Voedsel","Voedsel","Ja zo van die dingen die je eet");
         ArrayList<String> kaas = new ArrayList<String>();
         ArrayList<String> worst = new ArrayList<String>();
-        for (Vraag vraag:test.getVragen()) {
-            list.add(vraag);
+        kaas.add("kaas");
+        worst.add("worst");
+        Vraag vraag = new Vraag("Wat is lekker?", kaas, worst,"fout",categorie,0);
+         test.addVraag(vraag);
+        for (Vraag vraag2:test.getVragen()) {
+            list.add(vraag2);
 
         }
 
         
+        return list;
+
+    }
+
+    public ObservableList<Vraag> getCategorieTableItems(){
+        ObservableList list = FXCollections.observableArrayList();
+        Categorie categorie = new Categorie("Voedsel","Voedsel","Ja zo van die dingen die je eet");
+        ArrayList<String> kaas = new ArrayList<String>();
+        ArrayList<String> worst = new ArrayList<String>();
+        kaas.add("kaas");
+        worst.add("worst");
+        Vraag vraag = new Vraag("Wat is lekker?", kaas, worst,"fout",categorie,0);
+        test.addVraag(vraag);
+        test.addCategorie(categorie);
+        for (Categorie categorie1:test.getCategorieën()) {
+            list.add(categorie1);
+
+        }
+
+
         return list;
 
     }

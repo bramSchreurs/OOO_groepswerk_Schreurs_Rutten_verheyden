@@ -9,10 +9,11 @@ public class Vraag {
     ArrayList correcteAntwoorden;
     ArrayList mogelijkeAntwoorden;
     String Feedback;
+    Categorie categorie;
     Enum TypeVraag;
     int score;
 
-    public Vraag(String vraagString, ArrayList correcteAntwoorden, ArrayList mogelijkeAntwoorden, String feedback, int score) {
+    public Vraag(String vraagString, ArrayList correcteAntwoorden, ArrayList mogelijkeAntwoorden, String feedback,Categorie categorie, int score) {
         vragenIdStatic += 1;
         setVragenId();
         setCorrecteAntwoorden();
@@ -21,6 +22,16 @@ public class Vraag {
         setScore(score);
         addVraagToDatabase();
         setVraagString(vraagString);
+        setCategorie(categorie);
+
+    }
+
+    public Categorie getCategorie() {
+        return categorie;
+    }
+
+    public void setCategorie(Categorie categorie) {
+        this.categorie = categorie;
     }
 
     public int getVragenId() {
@@ -75,6 +86,7 @@ public class Vraag {
         //lorem ipsum
 
     }
+
 
 
 }

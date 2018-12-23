@@ -5,12 +5,22 @@ import java.util.ArrayList;
 public class Categorie {
     String naam;
     String vak;
-    ArrayList vragenLijst;
+    ArrayList<Vraag> vragenLijst;
+    String beschrijving;
 
-    public Categorie(String naam,String vak){
+    public Categorie(String naam,String vak,String beschrijving){
         setNaam(naam);
         setVak(vak);
         setVragenLijst(vragenLijst);
+        setBeschrijving(beschrijving);
+    }
+
+    public String getBeschrijving() {
+        return beschrijving;
+    }
+
+    public void setBeschrijving(String beschrijving) {
+        this.beschrijving = beschrijving;
     }
 
     public String getNaam() {
@@ -34,7 +44,12 @@ public class Categorie {
     }
 
     public void setVragenLijst(ArrayList vragenLijst) {
-        this.vragenLijst = vragenLijst;
+        this.vragenLijst = new ArrayList<Vraag>();
         //haal vragen uit database
+    }
+
+    @Override
+    public String toString(){
+        return this.vak;
     }
 }
