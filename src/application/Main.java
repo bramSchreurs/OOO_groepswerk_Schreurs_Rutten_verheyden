@@ -21,9 +21,10 @@ public class Main extends Application {
 
 		try {//kaas
 			//camembert
-			QuestionOverviewPane questionOverviewPane = new QuestionOverviewPane();
-			QuestionDetailPane questionDetailPane = new QuestionDetailPane();
 			SelfTestController controller = new SelfTestController(new DatabaseWithtxt());
+			QuestionOverviewPane questionOverviewPane = new QuestionOverviewPane(controller);
+			QuestionDetailPane questionDetailPane = new QuestionDetailPane(controller);
+
 			CategoryOverviewPane categoryOverviewPanel = new CategoryOverviewPane(controller);
 
 

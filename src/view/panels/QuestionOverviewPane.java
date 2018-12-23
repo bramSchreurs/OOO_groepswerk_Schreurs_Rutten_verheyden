@@ -18,7 +18,7 @@ public class QuestionOverviewPane extends GridPane {
 	private Button btnNew;
 	private SelfTestController controller = new SelfTestController(new DatabaseWithtxt());
 	
-	public QuestionOverviewPane() {
+	public QuestionOverviewPane(SelfTestController controller) {
 
 		this.setPadding(new Insets(5, 5, 5, 5));
         this.setVgap(5);
@@ -39,8 +39,14 @@ public class QuestionOverviewPane extends GridPane {
 		
 		btnNew = new Button("New");
 		this.add(btnNew, 0, 11, 1, 1);
+		this.btnNew.setOnAction(event -> this.createQuestionDetailPane());
+
 	}
-	
+
+	private void createQuestionDetailPane() {
+		new QuestionDetailPane(controller);
+	}
+
 	public void setNewAction(EventHandler<ActionEvent> newAction) {
 		btnNew.setOnAction(newAction);
 	}

@@ -18,10 +18,14 @@ public class SelfTestController {
     CategoryOverviewPane categorieOverviewPane;
     QuestionOverviewPane questionOverviewPane;
     TestFacade  testFacade= new TestFacade();
+    ArrayList<String> correcteAntwoorden;
+    ArrayList<String> mogelijkeAntwoorden;
 
     public SelfTestController(DatabaseWithtxt database){
         setDatabase(database);
         setTest(test);
+        correcteAntwoorden = new ArrayList<String>();
+        mogelijkeAntwoorden = new ArrayList<String>();
     }
 
     public void setDatabase(DatabaseWithtxt database) {
@@ -118,6 +122,21 @@ public class SelfTestController {
 
 
         return list;
+
+    }
+
+    public void addQuestionToDatabase(String vraagString,String feedBack, Categorie categorie){
+        Vraag vraag = new Vraag("Wat is lekker?", new ArrayList<String>(),new ArrayList<String>(),"Denk aan koeien",new Categorie("kaas","worst"),0);
+        //getDatabase().Addvraag(vraagString,this.correcteAntwoorden,this.mogelijkeAntwoorden,feedBack,categorie,0);
+    }
+
+    public void addCorrectAntwoord(String antwoord){
+        this.correcteAntwoorden.add(antwoord);
+
+    }
+
+    public void addMogelijkAntwoord(String antwoord){
+        this.mogelijkeAntwoorden.add(antwoord);
 
     }
 }
