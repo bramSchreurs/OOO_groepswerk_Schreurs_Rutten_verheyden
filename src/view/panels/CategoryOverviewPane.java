@@ -1,6 +1,6 @@
 package view.panels;
 
-import controller.CategoryHandler;
+import controller.CategoryDetailHandler;
 import controller.SelfTestController;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -20,8 +20,8 @@ public class CategoryOverviewPane extends GridPane {
 	private Button btnNew;
 	private String name, description;
 	private SelfTestController controller = new SelfTestController(new DatabaseWithtxt());
-	EventHandler<ActionEvent> newAction =  new CategoryHandler();
-	public CategoryOverviewPane() {
+	EventHandler<ActionEvent> newAction =  new CategoryDetailHandler();
+	public CategoryOverviewPane(SelfTestController controller) {
 		this.setPadding(new Insets(5, 5, 5, 5));
         this.setVgap(5);
         this.setHgap(5);
@@ -31,7 +31,7 @@ public class CategoryOverviewPane extends GridPane {
 		table = new TableView<>();
 		table.setPrefWidth(REMAINING);
         TableColumn nameCol = new TableColumn<>("Name");
-        nameCol.setCellValueFactory(new PropertyValueFactory("vak"));
+        nameCol.setCellValueFactory(new PropertyValueFactory("naam"));
         table.getColumns().add(nameCol);
         TableColumn descriptionCol = new TableColumn<>("Description");
         descriptionCol.setCellValueFactory(new PropertyValueFactory("beschrijving"));
@@ -42,8 +42,13 @@ public class CategoryOverviewPane extends GridPane {
 		
 		btnNew = new Button("New");
 		this.add(btnNew, 0, 11, 1, 1);
-		setNewAction(newAction);
+		this.btnNew.setOnAction(event -> this.createCategoryDetailPlane());
 	}
+
+	private void createCategoryDetailPlane() {
+		new CategoryDetailPane(this.controller);
+	}
+
 
 	public SelfTestController getController() {
 		return controller;
@@ -55,6 +60,7 @@ public class CategoryOverviewPane extends GridPane {
 
 
 	public void setNewAction(EventHandler<ActionEvent> newAction) {
+
 		btnNew.setOnAction(newAction);
 	}
 

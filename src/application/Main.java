@@ -1,10 +1,12 @@
 package application;
 
+import controller.SelfTestController;
 import javafx.application.Application;
 import javafx.scene.Group;
 import javafx.scene.Scene;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
+import model.databank.DatabaseWithtxt;
 import view.panels.AssesMainPane;
 import view.panels.CategoryDetailPane;
 import view.panels.CategoryOverviewPane;
@@ -21,9 +23,9 @@ public class Main extends Application {
 			//camembert
 			QuestionOverviewPane questionOverviewPane = new QuestionOverviewPane();
 			QuestionDetailPane questionDetailPane = new QuestionDetailPane();
+			SelfTestController controller = new SelfTestController(new DatabaseWithtxt());
+			CategoryOverviewPane categoryOverviewPanel = new CategoryOverviewPane(controller);
 
-			CategoryOverviewPane categoryOverviewPanel = new CategoryOverviewPane();
-			CategoryDetailPane categoryDetailPanel = new CategoryDetailPane();
 
 			TestPane testPane = new TestPane();
 			MessagePane messagePane = new MessagePane();

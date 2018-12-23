@@ -4,6 +4,7 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import model.Categorie;
 import model.Test;
+import model.TestFacade;
 import model.Vraag;
 import model.databank.DatabaseWithtxt;
 import view.panels.CategoryOverviewPane;
@@ -16,6 +17,7 @@ public class SelfTestController {
     Test test = new Test("voedseltest");
     CategoryOverviewPane categorieOverviewPane;
     QuestionOverviewPane questionOverviewPane;
+    TestFacade  testFacade= new TestFacade();
 
     public SelfTestController(DatabaseWithtxt database){
         setDatabase(database);
@@ -56,7 +58,7 @@ public class SelfTestController {
 
     public ObservableList<Vraag> getTableItems(){
         ObservableList list = FXCollections.observableArrayList();
-        Categorie categorie = new Categorie("Voedsel","Voedsel","Ja zo van die dingen die je eet");
+        Categorie categorie = new Categorie("Voedsel","Ja zo van die dingen die je eet");
         ArrayList<String> kaas = new ArrayList<String>();
         ArrayList<String> worst = new ArrayList<String>();
         kaas.add("kaas");
@@ -75,7 +77,33 @@ public class SelfTestController {
 
     public ObservableList<Vraag> getCategorieTableItems(){
         ObservableList list = FXCollections.observableArrayList();
-        Categorie categorie = new Categorie("Voedsel","Voedsel","Ja zo van die dingen die je eet");
+        Categorie categorie = new Categorie("Voedsel","Ja zo van die dingen die je eet");
+        ArrayList<String> kaas = new ArrayList<String>();
+        ArrayList<String> worst = new ArrayList<String>();
+        kaas.add("kaas");
+        worst.add("worst");
+        Vraag vraag = new Vraag("Wat is lekker?", kaas, worst,"fout",categorie,0);
+        test.addVraag(vraag);
+        test.addCategorie(categorie);
+        for (Categorie categorie1:test.getCategorieën()) {
+            list.add(categorie1);
+
+        }
+
+
+        return list;
+
+    }
+
+    public void addCategoryToDatabase(String naam, String categorie){
+        getDatabase().AddnewCategorie();
+
+
+    }
+
+    public ObservableList<Categorie> getAllCategories(){
+        ObservableList list = FXCollections.observableArrayList();
+        Categorie categorie = new Categorie("Voedsel","Ja zo van die dingen die je eet");
         ArrayList<String> kaas = new ArrayList<String>();
         ArrayList<String> worst = new ArrayList<String>();
         kaas.add("kaas");

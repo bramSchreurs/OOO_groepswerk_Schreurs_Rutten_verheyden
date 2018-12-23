@@ -4,13 +4,11 @@ import java.util.ArrayList;
 
 public class Categorie {
     String naam;
-    String vak;
     ArrayList<Vraag> vragenLijst;
     String beschrijving;
 
-    public Categorie(String naam,String vak,String beschrijving){
+    public Categorie(String naam,String beschrijving){
         setNaam(naam);
-        setVak(vak);
         setVragenLijst(vragenLijst);
         setBeschrijving(beschrijving);
     }
@@ -31,13 +29,6 @@ public class Categorie {
         this.naam = naam;
     }
 
-    public String getVak() {
-        return vak;
-    }
-
-    public void setVak(String vak) {
-        this.vak = vak;
-    }
 
     public ArrayList getVragenLijst() {
         return vragenLijst;
@@ -50,6 +41,6 @@ public class Categorie {
 
     @Override
     public String toString(){
-        return this.vak;
+        return this.naam;
     }
 }
