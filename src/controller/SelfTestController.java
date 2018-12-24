@@ -137,8 +137,8 @@ public class SelfTestController {
     }
 
     public void addQuestionToDatabase(String vraagString,String feedBack, Categorie categorie){
-        Vraag vraag = new Vraag("Wat is lekker?", new ArrayList<String>(),new ArrayList<String>(),"Denk aan koeien",new Categorie("kaas","worst"),0);
-        //getDatabase().Addvraag(vraagString,this.correcteAntwoorden,this.mogelijkeAntwoorden,feedBack,categorie,0);
+        //Vraag vraag = new Vraag("Wat is lekker?", new ArrayList<String>(),new ArrayList<String>(),"Denk aan koeien",new Categorie("kaas","worst"),0);
+        getDatabase().Addvraag(vraagString, );
     }
 
     public void addCorrectAntwoord(String antwoord){
