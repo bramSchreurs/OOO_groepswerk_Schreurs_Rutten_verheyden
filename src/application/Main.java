@@ -15,7 +15,7 @@ import view.panels.QuestionDetailPane;
 import view.panels.QuestionOverviewPane;
 import view.panels.TestPane;
 
-public class Main extends Application {
+public class Main  extends Application{
 	@Override
 	public void start(Stage primaryStage) {
 
@@ -29,7 +29,7 @@ public class Main extends Application {
 
 
 
-			MessagePane messagePane = new MessagePane();
+			MessagePane messagePane = new MessagePane(new SelfTestController(new DatabaseWithtxt()));
 
 			Group root = new Group();
 			Scene scene = new Scene(root, 750, 400);

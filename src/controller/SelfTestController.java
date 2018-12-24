@@ -85,7 +85,7 @@ public class SelfTestController {
 
         }
 
-        
+
         return list;
 
     }
@@ -111,7 +111,7 @@ public class SelfTestController {
     }
 
     public void addCategoryToDatabase(String naam, String categorie){
-        getDatabase().AddnewCategorie();
+        getDatabase().AddnewCategorie(naam,categorie);
 
 
     }
@@ -137,7 +137,9 @@ public class SelfTestController {
     }
 
     public void addQuestionToDatabase(String vraagString,String feedBack, Categorie categorie){
-        Vraag vraag = new Vraag("Wat is lekker?", new ArrayList<String>(),new ArrayList<String>(),"Denk aan koeien",new Categorie("kaas","worst"),0);
+        testFacade.Createvraag(vraagString, correcteAntwoorden,mogelijkeAntwoorden,feedBack,categorie,0);
+        this.correcteAntwoorden.clear();
+        this.mogelijkeAntwoorden.clear();
         //getDatabase().Addvraag(vraagString,this.correcteAntwoorden,this.mogelijkeAntwoorden,feedBack,categorie,0);
     }
 
@@ -199,5 +201,23 @@ public class SelfTestController {
         }
 
 
+    }
+
+    public String getResults() {
+        String result = "";
+        int correctCounter = 0;
+        int alleCounter = 0;
+        for (Vraag vraag : testFacade.TestgetVragen(test)) {
+            correctCounter += vraag.getScore();
+            alleCounter += 1;
+
+        }
+        for (Categorie categorie : testFacade.TestgetCategorieën(test)) {
+            result += categorie.getNaam();
+
+        }
+        test.getCategorieën();
+        result += "Your score: " + correctCounter + "/" + alleCounter + "/n";
+        return result;
     }
 }
