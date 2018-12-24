@@ -49,7 +49,7 @@ public class DatabaseWithtxt implements Databanken{
     }
 
     @Override
-    public void Addvraag(String vraag, ArrayList<String> mogAntwoorden, ArrayList<String> jusAntwoorden, String feedback, String categorie) {
+    public void Addvraag(String vraag, ArrayList<String> mogAntwoorden, ArrayList<String> jusAntwoorden, String feedback, String categorie, int score) {
         try {
             wr = new FileWriter("TextFiles\\Questions.txt");
             wr.append("\n" + vraag);
