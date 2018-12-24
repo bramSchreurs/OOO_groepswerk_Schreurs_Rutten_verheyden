@@ -87,6 +87,58 @@ public class TestFacade {
    public Test createTest(String naam){
         return new Test(naam);
    }
+    public void TestaddCategorie( Test test,Categorie categorie){
+        test.addCategorie(categorie);
+
+    }
+    public void TestaddVraag(Test test,Vraag vraag){
+        test.addVraag(vraag);
+    }
+
+    public String TestgetNaam(Test test) {
+        return test.getNaam() ;
+    }
+
+    public void TestsetNaam(String naam,Test test) {
+        test.setNaam(naam);
+    }
+
+    public ArrayList<Categorie> TestgetCategorieën(Test test)
+    {
+        return test.getCategorieën();
+    }
+
+    public void TestsetCategorieën(ArrayList categorieën,Test test)
+    {
+        test.setCategorieën(categorieën);
+    }
+
+    public ArrayList<Vraag> TestgetVragen(Test test) {
+        return test.getVragen();
+    }
+
+    public void setVragen(ArrayList vragen,Test test) {
+        test.setVragen(vragen);
+    }
+    public void setFeedbackWijze(Enum FeedbackWijze,Test test){
+       test.setFeedbackWijze(FeedbackWijze);
+    }
+
+
+    public void TestaddObserver(Observer observer,Test test) {
+            test.addObserver(observer);
+    }
+
+
+    public void TestremoveObserver(Observer observer,Test test) {
+        test.removeObserver(observer);
+    }
+
+
+    public void TestnotifyObservers(Test test) {
+        test.notifyObservers();
+
+    }
     //Categorie
         //Catogorie aanmaken
     public Categorie createCategorie(String naam,String beschrijving)
