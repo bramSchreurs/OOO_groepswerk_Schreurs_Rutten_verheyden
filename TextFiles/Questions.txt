@@ -1,2 +1,4 @@
 Welk patroon definieert een familie van algoritmes, kapselt ze in en maakt ze verwisselbaar?::camembert, comté, geitenkaas, brie::camembert, brie::Denk aan koeien::Design patterns::0
 Welk ontwerp principe is het minst van toepassing op het Strategy patroon?::worst, pens::worst::Denk aan varkens::Design principles::0
+Welk koe zegt het meeste moe?::Paula, Bernardo, Gloria::Bernardo::Denk aan vrouwen::koiereenen::0
+Welke aap is het trotst?::Bram, Redginald::Bram::Denk aan gorilla's::jazeker::0

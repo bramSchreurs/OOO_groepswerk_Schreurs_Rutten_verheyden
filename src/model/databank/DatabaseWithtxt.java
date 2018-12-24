@@ -3,6 +3,7 @@ package model.databank;
 import model.Categorie;
 import model.Vraag;
 
+import javax.swing.plaf.synth.SynthOptionPaneUI;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -133,7 +134,7 @@ public class DatabaseWithtxt implements Databanken{
             scanQuest = new Scanner(quest);
             while (scanQuest.hasNext()){
                 questLine = scanQuest.nextLine();
-                String[] parts = questLine.split("::", 5);
+                String[] parts = questLine.split("::", 6);
                 listQuestQuest.add(parts[0]);
                 String[] posAns = parts[1].split(", ");
                 for (String s : posAns){
@@ -156,6 +157,7 @@ public class DatabaseWithtxt implements Databanken{
     }
     public List<Vraag> maakVragenLijst(){
         for (int i = 0; i<listQuestQuest.size(); i++){
+            vraag = new Vraag();
             vraag.setVraagString(listQuestQuest.get(i));
             vraag.setCorrecteAntwoorden(listQuestPosAns.get(i));
             vraag.setGegevenAntwoorden(listQuestAns.get(i));
@@ -181,15 +183,14 @@ public class DatabaseWithtxt implements Databanken{
                 listCatName.add(parts[0]);
                 listCatDesc.add(parts[1]);
             }
-
-            System.out.println("\nAll names:\n");
+            /*System.out.println("\nAll names:\n");
             for (String n : listCatName){
                 System.out.println(n);
             }
             System.out.println("\nAll descriptions:\n");
             for (String d : listCatDesc){
                 System.out.println(d);
-            }
+            }*/
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
@@ -198,8 +199,9 @@ public class DatabaseWithtxt implements Databanken{
 
     public List<Categorie> maakCategorieLijst(){
         for (int i = 0; i<listCatName.size(); i++){
+            categorie= new Categorie();
             categorie.setNaam(listCatName.get(i));
-            categorie.setNaam(listCatDesc.get(i));
+            categorie.setBeschrijving(listCatDesc.get(i));
             categorielijst.add(categorie);
         }
         return categorielijst;

@@ -17,6 +17,10 @@ public class Vraag {
     int score;
     DatabaseWithtxt db = new DatabaseWithtxt();
 
+    public Vraag(){
+
+    }
+
     public Vraag(String vraagString, ArrayList correcteAntwoorden, ArrayList mogelijkeAntwoorden, String feedback,Categorie categorie, int score) {
         vragenIdStatic += 1;
         setVragenId();

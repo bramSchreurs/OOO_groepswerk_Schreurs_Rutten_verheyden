@@ -11,6 +11,10 @@ public class Categorie {
     String beschrijving;
     DatabaseWithtxt db = new DatabaseWithtxt();
 
+    public Categorie(){
+
+    }
+
     public Categorie(String naam,String beschrijving){
         setNaam(naam);
         setVragenLijst(vragenLijst);

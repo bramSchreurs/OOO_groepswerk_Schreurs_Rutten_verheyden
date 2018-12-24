@@ -16,6 +16,8 @@ import java.util.List;
 
 public class SelfTestController {
     DatabaseWithtxt database;
+    List<Vraag> vragenlijst;
+    List<Categorie> categorielijst;
     Test test = new Test("voedseltest");
     CategoryOverviewPane categorieOverviewPane;
     QuestionOverviewPane questionOverviewPane;
@@ -24,11 +26,11 @@ public class SelfTestController {
     ArrayList<String> mogelijkeAntwoorden;
     ArrayList<String> alleAntwoorden;
     private int counter = 0;
-    List<Vraag> vragenlijst;
-    List<Categorie> categorielijst;
 
     public SelfTestController(DatabaseWithtxt database){
         setDatabase(database);
+        database.Scanallevragen();
+        database.ScanalleCatogorien();
         vragenlijst = database.maakVragenLijst();
         categorielijst = database.maakCategorieLijst();
         setTest(test);
@@ -39,12 +41,12 @@ public class SelfTestController {
         Vraag vraag = new Vraag("Kaas?",correcteAntwoorden,mogelijkeAntwoorden,"Ja zuivelproduct he",new Categorie("Voedsel","Eetbare dingen"),0);
         Vraag vraag2 = new Vraag("Worst?",correcteAntwoorden,mogelijkeAntwoorden,"Ja vleesproduct he",new Categorie("Voedsel","Eetbare dingen"),0);
 
-        test.addVraag(vraag);
-        test.addVraag(vraag2);
-        /*for (Vraag v : vragenlijst){
+        /*test.addVraag(vraag);
+        test.addVraag(vraag2);*/
+        for (Vraag v : vragenlijst){
             test.addVraag(v);
         }
-        */
+
     }
 
     public void setDatabase(DatabaseWithtxt database) {
@@ -87,23 +89,24 @@ public class SelfTestController {
         kaas.add("kaas");
         worst.add("worst");
         Vraag vraag = new Vraag("Wat is lekker?", kaas, worst,"fout",categorie,0);
-        test.addVraag(vraag);
+        /*test.addVraag(vraag);
         for (Vraag vraag2:test.getVragen()) {
             list.add(vraag2);
         }
-        return list;
+        return list;*/
 
 
-        /*for (Vraag v : vragenlijst){
+        for (Vraag v : vragenlijst){
             test.addVraag(v);
         }
         for (Vraag vrg : test.getVragen()){
             list.add(vrg);
         }
         return list;
-        */
+
 
     }
+
 
     public ObservableList<Vraag> getCategorieTableItems(){
         ObservableList list = FXCollections.observableArrayList();
@@ -113,13 +116,14 @@ public class SelfTestController {
         kaas.add("kaas");
         worst.add("worst");
         Vraag vraag = new Vraag("Wat is lekker?", kaas, worst,"fout",categorie,0);
-        test.addVraag(vraag);
+        /*test.addVraag(vraag);
         test.addCategorie(categorie);
         for (Categorie categorie1:test.getCategorieën()) {
             list.add(categorie1);
-        }
+        }*/
 
-        /*for (Vraag v : vragenlijst){
+
+        for (Vraag v : vragenlijst){
             test.addVraag(v);
         }
         for (Categorie c : categorielijst){
@@ -128,7 +132,7 @@ public class SelfTestController {
         for (Categorie ctg : test.getCategorieën()){
             list.add(ctg);
         }
-        */
+
         return list;
 
     }
@@ -147,13 +151,24 @@ public class SelfTestController {
         kaas.add("kaas");
         worst.add("worst");
         Vraag vraag = new Vraag("Wat is lekker?", kaas, worst,"fout",categorie,0);
-        test.addVraag(vraag);
+        /*test.addVraag(vraag);
         test.addCategorie(categorie);
         for (Categorie categorie1:test.getCategorieën()) {
             list.add(categorie1);
 
         }
 
+
+        return list;*/
+        for (Vraag v : vragenlijst){
+            test.addVraag(v);
+        }
+        for (Categorie c : categorielijst){
+            test.addCategorie(c);
+        }
+        for (Categorie ctg : test.getCategorieën()){
+            list.add(ctg);
+        }
 
         return list;
 
