@@ -48,6 +48,7 @@ public class DatabaseWithtxt implements Databanken{
         }
         scanCat.close();
 
+
         File quest = new File("TextFiles\\Questions.txt");
         Scanner scanQuest = null;
         try {
@@ -115,9 +116,35 @@ public class DatabaseWithtxt implements Databanken{
     }
 
     @Override
-    public ArrayList<Categorie> ScanalleCatogorien() {
+    public ArrayList<Categorie> ScanalleCatogorien()
+    {
+        File cat = new File("TextFiles\\Categories.txt");
+        Scanner scanCat = null;
+        try {
+            scanCat = new Scanner(cat);
+            while (scanCat.hasNext()){
+                catLine = scanCat.nextLine();
+                String[] parts = catLine.split("::", 2);
+                listCatName.add(parts[0]);
+                listCatDesc.add(parts[1]);
+            }
+
+            System.out.println("\nAll names:\n");
+            for (String n : listCatName){
+                System.out.println(n);
+            }
+            System.out.println("\nAll descriptions:\n");
+            for (String d : listCatDesc){
+                System.out.println(d);
+            }
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        scanCat.close();
+
         return null;
     }
+
 
     @Override
     public ArrayList<Test> ScanalleTesten() {
