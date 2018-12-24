@@ -41,7 +41,7 @@ public class Categorie {
     public void setVragenLijst(ArrayList vragenLijst) {
         this.vragenLijst = new ArrayList<Vraag>();
         //haal vragen uit database
-        db.getListQuestQuest();
+
 
     }
 

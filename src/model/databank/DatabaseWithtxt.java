@@ -28,10 +28,6 @@ public class DatabaseWithtxt implements Databanken{
     Scanner scanCat;
     Writer wr;
 
-    public static void main(String[] args){
-
-    }
-
     @Override
     public void Addnewtest() {
 
