@@ -29,20 +29,13 @@ public class Main  extends Application{
 
 
 
-			MessagePane messagePane = new MessagePane(new SelfTestController(new DatabaseWithtxt()));
+			MessagePane messagePane = new MessagePane(new Stage(),controller);
 
-			Group root = new Group();
-			Scene scene = new Scene(root, 750, 400);
 
-			BorderPane borderPane = new AssesMainPane(messagePane, categoryOverviewPanel, questionOverviewPane);
-			borderPane.prefHeightProperty().bind(scene.heightProperty());
-			borderPane.prefWidthProperty().bind(scene.widthProperty());
 
-			root.getChildren().add(borderPane);
-			primaryStage.setScene(scene);
-			primaryStage.sizeToScene();
+			AssesMainPane assesMainPane = new AssesMainPane(controller,messagePane, categoryOverviewPanel, questionOverviewPane);
 
-			primaryStage.show();
+
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

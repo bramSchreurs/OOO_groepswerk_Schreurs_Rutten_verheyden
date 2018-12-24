@@ -18,10 +18,9 @@ import model.databank.DatabaseWithtxt;
 public class CategoryOverviewPane extends GridPane {
 	private TableView table;
 	private Button btnNew;
-	private String name, description;
-	private SelfTestController controller = new SelfTestController(new DatabaseWithtxt());
-	EventHandler<ActionEvent> newAction =  new CategoryDetailHandler();
+	private SelfTestController controller;
 	public CategoryOverviewPane(SelfTestController controller) {
+		this.controller = controller;
 		this.setPadding(new Insets(5, 5, 5, 5));
         this.setVgap(5);
         this.setHgap(5);

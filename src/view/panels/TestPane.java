@@ -7,11 +7,13 @@ import controller.SelfTestController;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.geometry.Insets;
+import javafx.scene.Group;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.ToggleGroup;
+import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 import model.databank.DatabaseWithtxt;
@@ -39,6 +41,7 @@ public class TestPane extends GridPane {
 		questionField = new Label();
 		add(questionField, 0, 0, 1, 1);
 		questionField.setText(selfTestController.getNextQuestionString());
+
 		
 		statementGroup = new ToggleGroup();
 		for (String antwoord:selfTestController.getAlleAntwoorden()) {
@@ -61,9 +64,40 @@ public class TestPane extends GridPane {
 
 	private void submitAnswer() {
 		selfTestController.submitAnswer(getSelectedStatements());
-		if (selfTestController.getNextQuestionString() != null){
-			selfTestController.lowerCounter();
+		selfTestController.raiseCounter();
+		System.out.println(selfTestController.getCounter());
+		if (selfTestController.getNextQuestionString() != null) {
+
+			System.out.println(selfTestController.getCounter());
 			new TestPane(selfTestController);
+			testStage.close();
+		}
+		else{
+			selfTestController.setCounter(0);
+			selfTestController.notifyObservers();
+			System.out.println(selfTestController.getCounter());
+			Stage primaryStage = new Stage();
+			QuestionOverviewPane questionOverviewPane = new QuestionOverviewPane(selfTestController);
+
+
+			CategoryOverviewPane categoryOverviewPanel = new CategoryOverviewPane(selfTestController);
+
+
+
+			MessagePane messagePane = new MessagePane(testStage,selfTestController);
+
+			Group root = new Group();
+			Scene scene = new Scene(root, 750, 400);
+
+			BorderPane borderPane = new AssesMainPane(selfTestController,messagePane, categoryOverviewPanel, questionOverviewPane);
+			borderPane.prefHeightProperty().bind(scene.heightProperty());
+			borderPane.prefWidthProperty().bind(scene.widthProperty());
+
+			root.getChildren().add(borderPane);
+			primaryStage.setScene(scene);
+			primaryStage.sizeToScene();
+
+			primaryStage.show();
 			testStage.close();
 		}
 

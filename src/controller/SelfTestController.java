@@ -1,11 +1,9 @@
 package controller;
 
+import application.Main;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import model.Categorie;
-import model.Test;
-import model.TestFacade;
-import model.Vraag;
+import model.*;
 import model.databank.DatabaseWithtxt;
 import view.panels.CategoryOverviewPane;
 import view.panels.QuestionOverviewPane;
@@ -14,7 +12,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class SelfTestController {
+public class SelfTestController implements Subject {
     DatabaseWithtxt database;
     Test test = new Test("voedseltest");
     CategoryOverviewPane categorieOverviewPane;
@@ -24,18 +22,27 @@ public class SelfTestController {
     ArrayList<String> mogelijkeAntwoorden;
     ArrayList<String> alleAntwoorden;
     private int counter = 0;
+    ArrayList<Observer> observers;
 
     public SelfTestController(DatabaseWithtxt database){
+        observers = new ArrayList<Observer>();
         setDatabase(database);
         setTest(test);
+        test.setFeedbackWijze(FeedbackWijze.SCORE);
         correcteAntwoorden = new ArrayList<String>();
         correcteAntwoorden.add("zuivelProduct");
         mogelijkeAntwoorden = new ArrayList<String>();
         mogelijkeAntwoorden.add("Vleesproduct");
-        Vraag vraag = new Vraag("Kaas?",correcteAntwoorden,mogelijkeAntwoorden,"Ja zuivelproduct he",new Categorie("Voedsel","Eetbare dingen"),0);
-        Vraag vraag2 = new Vraag("Worst?",correcteAntwoorden,mogelijkeAntwoorden,"Ja vleesproduct he",new Categorie("Voedsel","Eetbare dingen"),0);
-
+        Categorie voedsel = new Categorie("Voedsel","Eetbare dingen");
+        Vraag vraag = new Vraag("Kaas?",correcteAntwoorden,mogelijkeAntwoorden,"Ja zuivelproduct he",voedsel,0);
         test.addVraag(vraag);
+        ArrayList<String> correcteAntwoorden2 = new ArrayList<String>();
+        ArrayList<String> mogelijkeAntwoorden2 = new ArrayList<String>();
+        correcteAntwoorden2.add("Vleesproduct");
+        mogelijkeAntwoorden2.add("Zuivelproduct");
+        Vraag vraag2 = new Vraag("Worst?",correcteAntwoorden2,mogelijkeAntwoorden2,"Ja vleesproduct he",voedsel,0);
+        test.addCategorie(voedsel);
+
         test.addVraag(vraag2);
     }
 
@@ -73,13 +80,7 @@ public class SelfTestController {
 
     public ObservableList<Vraag> getTableItems(){
         ObservableList list = FXCollections.observableArrayList();
-        Categorie categorie = new Categorie("Voedsel","Ja zo van die dingen die je eet");
-        ArrayList<String> kaas = new ArrayList<String>();
-        ArrayList<String> worst = new ArrayList<String>();
-        kaas.add("kaas");
-        worst.add("worst");
-        Vraag vraag = new Vraag("Wat is lekker?", kaas, worst,"fout",categorie,0);
-         test.addVraag(vraag);
+
         for (Vraag vraag2:test.getVragen()) {
             list.add(vraag2);
 
@@ -92,14 +93,7 @@ public class SelfTestController {
 
     public ObservableList<Vraag> getCategorieTableItems(){
         ObservableList list = FXCollections.observableArrayList();
-        Categorie categorie = new Categorie("Voedsel","Ja zo van die dingen die je eet");
-        ArrayList<String> kaas = new ArrayList<String>();
-        ArrayList<String> worst = new ArrayList<String>();
-        kaas.add("kaas");
-        worst.add("worst");
-        Vraag vraag = new Vraag("Wat is lekker?", kaas, worst,"fout",categorie,0);
-        test.addVraag(vraag);
-        test.addCategorie(categorie);
+
         for (Categorie categorie1:test.getCategorieën()) {
             list.add(categorie1);
 
@@ -118,14 +112,7 @@ public class SelfTestController {
 
     public ObservableList<Categorie> getAllCategories(){
         ObservableList list = FXCollections.observableArrayList();
-        Categorie categorie = new Categorie("Voedsel","Ja zo van die dingen die je eet");
-        ArrayList<String> kaas = new ArrayList<String>();
-        ArrayList<String> worst = new ArrayList<String>();
-        kaas.add("kaas");
-        worst.add("worst");
-        Vraag vraag = new Vraag("Wat is lekker?", kaas, worst,"fout",categorie,0);
-        test.addVraag(vraag);
-        test.addCategorie(categorie);
+
         for (Categorie categorie1:test.getCategorieën()) {
             list.add(categorie1);
 
@@ -161,16 +148,13 @@ public class SelfTestController {
     }
 
     public String getNextQuestionString() {
-        if (counter>=getTest().getVragen().size()){
+        if (counter>=getTest().getVragen().size()||getTest().getVragen().get(counter).getVraagString()==null || getTest().getVragen().get(counter).getVraagString().isEmpty()){
             return null;
         }
-        if (getTest().getVragen().get(counter).getVraagString()==null || getTest().getVragen().get(counter).getVraagString().isEmpty()){
-            return null;
+        else {
+            String vraag = getTest().getVragen().get(counter).getVraagString();
+            return vraag;
         }
-        System.out.println(getTest().getVragen().get(counter).getVraagString());
-        String vraag =  getTest().getVragen().get(counter).getVraagString();
-        raiseCounter();
-        return vraag;
     }
 
     public ArrayList<String> getAlleAntwoorden() {
@@ -187,13 +171,24 @@ public class SelfTestController {
         return alleAntwoorden;
     }
 
+    public int getCounter() {
+        return counter;
+    }
+
+    public void setCounter(int counter) {
+        this.counter = counter;
+    }
+
     public void submitAnswer(List<String> antwoorden) {
-        if (counter >= test.getVragen().size())
-        {
+        System.out.println(counter + "hier zo");
+        if (counter >= test.getVragen().size()) {
+            notifyObservers();
             return;
         }
         test.getVragen().get(counter).setScore(1);
         for (String antwoord:antwoorden) {
+            System.out.println(antwoord);
+            System.out.println(counter);
             if (!test.getVragen().get(counter).getCorrecteAntwoorden().contains(antwoord)){
                 test.getVragen().get(counter).setScore(0);
             }
@@ -204,20 +199,71 @@ public class SelfTestController {
     }
 
     public String getResults() {
-        String result = "";
-        int correctCounter = 0;
-        int alleCounter = 0;
-        for (Vraag vraag : testFacade.TestgetVragen(test)) {
-            correctCounter += vraag.getScore();
-            alleCounter += 1;
-
+        boolean allTrue = true;
+        for (Vraag vraag3: test.getVragen()) {
+            if (vraag3.getScore()==0){
+                allTrue = false;
+            }
         }
-        for (Categorie categorie : testFacade.TestgetCategorieën(test)) {
-            result += categorie.getNaam();
-
+        if (allTrue == true){
+            return "Wauw je hebt alles juist, mooi zo!";
         }
-        test.getCategorieën();
-        result += "Your score: " + correctCounter + "/" + alleCounter + "/n";
-        return result;
+        if (test.getFeedbackWijze().equals("Score")) {
+            String result = "";
+
+            int correctCounter = 0;
+            int alleCounter = 0;
+            for (Vraag vraag : testFacade.TestgetVragen(test)) {
+                correctCounter += vraag.getScore();
+                alleCounter += 1;
+
+            }
+            result += "Your score: " + correctCounter + "/" + alleCounter + "\n";
+
+            for (Categorie categorie : testFacade.TestgetCategorieën(test)) {
+                int correctPerCategorie = 0;
+                int aantalPerCategorie = 0;
+                for (Vraag vraag2 : testFacade.TestgetVragen(test)) {
+                    if (vraag2.getCategorie().equals(categorie)) {
+                        correctPerCategorie += vraag2.getScore();
+                        aantalPerCategorie += 1;
+                    }
+
+
+                }
+                result += categorie.getNaam() + ": " + correctPerCategorie + "/" + aantalPerCategorie + "\n";
+
+
+            }
+            return result;
+        }
+        if (test.getFeedbackWijze().equals("Feedback")) {
+            String result2 = "";
+            for (Vraag vraag : test.getVragen()) {
+                if (vraag.getScore() == 0) {
+                    result2 += vraag.getFeedback();
+                }
+            }
+            return result2;
+        }
+        return null;
+    }
+
+    @Override
+    public void addObserver(Observer observer) {
+        observers.add(observer);
+    }
+
+    @Override
+    public void removeObserver(Observer observer) {
+        observers.remove(observer);
+
+    }
+
+    @Override
+    public void notifyObservers() {
+        for (Observer observer: observers) {
+            observer.update();
+        }
     }
 }

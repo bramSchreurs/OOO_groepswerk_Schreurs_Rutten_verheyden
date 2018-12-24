@@ -50,6 +50,9 @@ public class Test implements Subject{
     public void setFeedbackWijze(Enum FeedbackWijze){
         this.feedbackWijze = FeedbackWijze;
     }
+    public String getFeedbackWijze(){
+        return this.feedbackWijze.toString();
+    }
 
     @Override
     public void addObserver(Observer observer) {

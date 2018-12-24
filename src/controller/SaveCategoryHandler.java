@@ -10,13 +10,13 @@ import view.panels.CategoryDetailPane;
 
     public class SaveCategoryHandler implements EventHandler<ActionEvent> {
         CategoryDetailPane detailPane;
-        SelfTestController controller = new SelfTestController(new DatabaseWithtxt());
+        //SelfTestController controller = new SelfTestController(new DatabaseWithtxt());
 
 
         @Override
         public void handle(ActionEvent event) {
 
-            controller.addCategoryToDatabase("naam","categorie");
+            //controller.addCategoryToDatabase("naam","categorie");
             CategoryDetailPane pane = (CategoryDetailPane) event.getSource();
             pane.close();
 

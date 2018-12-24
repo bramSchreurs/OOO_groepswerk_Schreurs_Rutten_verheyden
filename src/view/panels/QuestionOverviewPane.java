@@ -16,9 +16,10 @@ import model.databank.DatabaseWithtxt;
 public class QuestionOverviewPane extends GridPane {
 	private TableView table;
 	private Button btnNew;
-	private SelfTestController controller = new SelfTestController(new DatabaseWithtxt());
+	private SelfTestController controller;
 	
 	public QuestionOverviewPane(SelfTestController controller) {
+	    this.controller = controller;
 
 		this.setPadding(new Insets(5, 5, 5, 5));
         this.setVgap(5);

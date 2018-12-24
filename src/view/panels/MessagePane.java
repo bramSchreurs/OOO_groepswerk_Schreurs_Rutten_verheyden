@@ -1,7 +1,5 @@
 package view.panels;
 
-import java.util.Observer;
-
 import controller.SelfTestController;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -16,16 +14,21 @@ import javafx.scene.layout.BorderWidths;
 import javafx.scene.layout.CornerRadii;
 import javafx.scene.layout.GridPane;
 import javafx.scene.paint.Color;
+import javafx.stage.Stage;
+import model.Observer;
 import model.databank.DatabaseWithtxt;
 
-public class MessagePane extends GridPane {
+public class MessagePane extends GridPane implements Observer {
 	private Button testButton;
 	private SelfTestController selfTestController;
 	private Label categorieEnUitslag;
-	public MessagePane (SelfTestController selfTestController){
+	private Stage oldStage;
+	public MessagePane (Stage oldStage, SelfTestController selfTestController){
+		this.oldStage = oldStage;
 		this.selfTestController = selfTestController;
 		categorieEnUitslag = new Label();
 		categorieEnUitslag.setText(selfTestController.getResults());
+		add(categorieEnUitslag,0,0,1,1);
 	    setBorder(new Border(new BorderStroke(Color.BLACK, 
 	            BorderStrokeStyle.SOLID, CornerRadii.EMPTY, BorderWidths.DEFAULT)));
 
@@ -41,6 +44,11 @@ public class MessagePane extends GridPane {
 
 	private void createTestPane() {
 		new TestPane(selfTestController);
+
 	}
 
+	@Override
+	public void update() {
+			oldStage.close();
+	}
 }
