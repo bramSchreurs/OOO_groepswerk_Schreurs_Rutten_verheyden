@@ -5,8 +5,6 @@ import java.util.ArrayList;
 public class TestFacade {
     // Vragen methodes
      //Maak nieuwe vraag aan
-    //TODO setters
-    //TODO setters
     public  Vraag Createvraag(String vraagString, ArrayList correcteAntwoorden, ArrayList mogelijkeAntwoorden, String feedback,Categorie categorie, int score){
         return new Vraag(vraagString,correcteAntwoorden, mogelijkeAntwoorden,feedback,categorie,score);
     }
@@ -44,9 +42,9 @@ public class TestFacade {
         return vraag.getCorrecteAntwoorden();
     }
 
-    public void VraagssetCorrecteAntwoorden(Vraag vraag)
+    public void VraagssetCorrecteAntwoorden(Vraag vraag,ArrayList<String> strings)
     {
-        vraag.setCorrecteAntwoorden();
+        vraag.setCorrecteAntwoorden(strings);
     }
 
     public ArrayList VraagsgetMogelijkeAntwoorden(Vraag vraag)
@@ -54,9 +52,9 @@ public class TestFacade {
         return vraag.getMogelijkeAntwoorden();
     }
 
-    public void VraagssetGegevenAntwoorden(Vraag vraag)
+    public void VraagssetGegevenAntwoorden(Vraag vraag,ArrayList<String> strings)
     {
-        vraag.setGegevenAntwoorden();
+        vraag.setGegevenAntwoorden(strings);
     }
 
     public String VraagsgetFeedback(Vraag vraag)

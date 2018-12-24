@@ -16,8 +16,8 @@ public class Vraag {
     public Vraag(String vraagString, ArrayList correcteAntwoorden, ArrayList mogelijkeAntwoorden, String feedback,Categorie categorie, int score) {
         vragenIdStatic += 1;
         setVragenId();
-        setCorrecteAntwoorden();
-        setGegevenAntwoorden();
+        setCorrecteAntwoorden(correcteAntwoorden);
+        setGegevenAntwoorden(mogelijkeAntwoorden);
         setFeedback(feedback);
         setScore(score);
         addVraagToDatabase();
@@ -54,16 +54,16 @@ public class Vraag {
         return correcteAntwoorden;
     }
 
-    public void setCorrecteAntwoorden() {
-        this.correcteAntwoorden = new ArrayList<String>();
+    public void setCorrecteAntwoorden(ArrayList<String> strings) {
+        this.correcteAntwoorden = strings;
     }
 
     public ArrayList getMogelijkeAntwoorden() {
         return mogelijkeAntwoorden;
     }
 
-    public void setGegevenAntwoorden() {
-        this.mogelijkeAntwoorden = new ArrayList<String>();
+    public void setGegevenAntwoorden(ArrayList<String> strings) {
+        this.mogelijkeAntwoorden = strings;
     }
 
     public String getFeedback() {
