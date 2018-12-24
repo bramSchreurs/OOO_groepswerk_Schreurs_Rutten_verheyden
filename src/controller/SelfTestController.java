@@ -28,7 +28,7 @@ public class SelfTestController implements Subject {
         observers = new ArrayList<Observer>();
         setDatabase(database);
         setTest(test);
-        test.setFeedbackWijze(FeedbackWijze.SCORE);
+        test.setFeedbackWijze(FeedbackWijze.FEEDBACK);
         correcteAntwoorden = new ArrayList<String>();
         correcteAntwoorden.add("zuivelProduct");
         mogelijkeAntwoorden = new ArrayList<String>();
@@ -241,7 +241,7 @@ public class SelfTestController implements Subject {
             String result2 = "";
             for (Vraag vraag : test.getVragen()) {
                 if (vraag.getScore() == 0) {
-                    result2 += vraag.getFeedback();
+                    result2 += vraag.getFeedback() + "\n";
                 }
             }
             return result2;

@@ -181,7 +181,7 @@ public class DatabaseWithtxt implements Databanken{
                 catLine = scanCat.nextLine();
                 String[] parts = catLine.split("::", 2);
                 listCatName.add(parts[0]);
-                listCatDesc.add(parts[1]);
+                //listCatDesc.add(parts[1]);
             }
             /*System.out.println("\nAll names:\n");
             for (String n : listCatName){
@@ -201,7 +201,7 @@ public class DatabaseWithtxt implements Databanken{
         for (int i = 0; i<listCatName.size(); i++){
             categorie= new Categorie();
             categorie.setNaam(listCatName.get(i));
-            categorie.setBeschrijving(listCatDesc.get(i));
+//            categorie.setBeschrijving(listCatDesc.get(i));
             categorielijst.add(categorie);
         }
         return categorielijst;
