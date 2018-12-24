@@ -28,12 +28,12 @@ public class DatabasewithDB implements  Databanken {
     }
 
     @Override
-    public void deleteCategorie() {
+    public void deleteCategorie(int index) {
 
     }
 
     @Override
-    public void deleteVraag() {
+    public void deleteVraag(int index) {
 
     }
 
