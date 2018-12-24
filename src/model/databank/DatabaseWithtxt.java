@@ -4,8 +4,7 @@ import model.Categorie;
 import model.Test;
 import model.Vraag;
 
-import java.io.File;
-import java.io.FileNotFoundException;
+import java.io.*;
 import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.List;
@@ -23,34 +22,92 @@ public class DatabaseWithtxt implements Databanken{
 
         //gebruik Singleton
     }
-    public static void main(String[] args){
-        File cat = new File("TextFiles\\Categories.txt");
-        Scanner scanCat = null;
-        try {
-            scanCat = new Scanner(cat);
-            while (scanCat.hasNext()){
-                catLine = scanCat.nextLine();
-                String[] parts = catLine.split("::", 2);
-                listCatName.add(parts[0]);
-                listCatDesc.add(parts[1]);
-            }
+    File quest = new File("TextFiles\\Questions.txt");
+    Scanner scanQuest = null;
+    File cat = new File("TextFiles\\Categories.txt");
+    Scanner scanCat = null;
+    Writer wr;
 
-            System.out.println("\nAll names:\n");
-            for (String n : listCatName){
-                System.out.println(n);
+    public static void main(String[] args){
+
+    }
+
+    @Override
+    public void Addnewtest() {
+
+    }
+
+    @Override
+    public void AddnewCategorie(String naam, String beschrijving) {
+        try {
+            wr = new FileWriter("TextFiles\\Categories.txt");
+            wr.append("\n" + naam);
+            wr.flush();
+            wr.append("::");
+            wr.flush();
+            wr.append(beschrijving);
+            wr.close();
+        } catch (IOException e1) {
+                e1.printStackTrace();
+        }
+    }
+
+    @Override
+    public void Addvraag(String vraag, ArrayList<String> mogAntwoorden, ArrayList<String> jusAntwoorden) {
+        try {
+            wr = new FileWriter("TextFiles\\Questions.txt");
+            wr.append("\n" + vraag);
+            wr.flush();
+            wr.append("::");
+            wr.flush();
+            for (int i = 0; i<mogAntwoorden.size(); i++){
+                if (i != 0){
+                    wr.append(", ");
+                    wr.flush();
+                    wr.append(mogAntwoorden.get(i));
+                    wr.flush();
+                }
+                else{
+                    wr.append(mogAntwoorden.get(i));
+                    wr.flush();
+                }
             }
-            System.out.println("\nAll descriptions:\n");
-            for (String d : listCatDesc){
-                System.out.println(d);
+            wr.append("::");
+            for (int i = 0; i<jusAntwoorden.size(); i++){
+                if (i != 0){
+                    wr.append(", ");
+                    wr.flush();
+                    wr.append(jusAntwoorden.get(i));
+                    wr.flush();
+                }
+                else{
+                    wr.append(jusAntwoorden.get(i));
+                    wr.flush();
+                }
             }
-        } catch (FileNotFoundException e) {
+            wr.close();
+        } catch (IOException e) {
             e.printStackTrace();
         }
-        scanCat.close();
+    }
 
+    @Override
+    public void deletetest() {
 
-        File quest = new File("TextFiles\\Questions.txt");
-        Scanner scanQuest = null;
+    }
+
+    @Override
+    public void deleteCategorie() {
+
+    }
+
+    @Override
+    public void deleteVraag() {
+
+    }
+
+    @Override
+    public void Scanallevragen() {
         try {
             scanQuest = new Scanner(quest);
             while (scanQuest.hasNext()){
@@ -77,49 +134,11 @@ public class DatabaseWithtxt implements Databanken{
             e.printStackTrace();
         }
         scanQuest.close();
-
     }
 
     @Override
-    public void Addnewtest() {
-
-    }
-
-    @Override
-    public void AddnewCategorie() {
-
-    }
-
-    @Override
-    public void Addvraag() {
-
-    }
-
-    @Override
-    public void deletetest() {
-
-    }
-
-    @Override
-    public void deleteCategorie() {
-
-    }
-
-    @Override
-    public void deleteVraag() {
-
-    }
-
-    @Override
-    public ArrayList<Vraag> Scanallevragen() {
-        return null;
-    }
-
-    @Override
-    public ArrayList<Categorie> ScanalleCatogorien()
+    public void ScanalleCatogorien()
     {
-        File cat = new File("TextFiles\\Categories.txt");
-        Scanner scanCat = null;
         try {
             scanCat = new Scanner(cat);
             while (scanCat.hasNext()){
@@ -141,28 +160,12 @@ public class DatabaseWithtxt implements Databanken{
             e.printStackTrace();
         }
         scanCat.close();
-
-        return null;
     }
 
 
     @Override
-    public ArrayList<Test> ScanalleTesten() {
-        return null;
-    }
-
-    @Override
-    public void MaaknieuweTest() {
+    public void ScanalleTesten() {
 
     }
 
-    @Override
-    public void MaaknieuweCategorie() {
-
-    }
-
-    @Override
-    public void MaaknieuweVraag() {
-
-    }
 }

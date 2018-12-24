@@ -8,6 +8,7 @@ public class TestFacade {
     public  Vraag Createvraag(String vraagString, ArrayList correcteAntwoorden, ArrayList mogelijkeAntwoorden, String feedback,Categorie categorie, int score){
         return new Vraag(vraagString,correcteAntwoorden, mogelijkeAntwoorden,feedback,categorie,score);
     }
+
     public Categorie VraaggetCategorie(Vraag vraag) {
         return vraag.categorie;
     }
@@ -195,5 +196,11 @@ public class TestFacade {
     public String CategorietoString(Categorie cat){
         return cat.toString();
     }
-}
 
+    //Evalutiemethods
+        //Evaltievormfactory
+    public EvaluatieVorm getEvaluatieVorm(EvaluatieVormFactory fact,FeedbackWijze feedback , ArrayList vragen) {
+        return fact.getEvaluatieVorm(feedback,vragen);
+    }
+
+}

@@ -11,9 +11,9 @@ public interface Databanken {
     //nieuwe testin databank steken
     void Addnewtest();
     // nieuwe Categorie in databank steken
-    void AddnewCategorie();
+    void AddnewCategorie(String naam, String beschrijving);
     //Nieuwe vraag in databank steken
-    void Addvraag();
+    void Addvraag(String vraag, ArrayList<String> mogAntwoorden, ArrayList<String> jusAntwoorden);
     // test uit databank halen
     void deletetest();
     //Categorie uit db halen
@@ -21,16 +21,11 @@ public interface Databanken {
     //Vraag uit db halen
     void deleteVraag();
     // Allen vragen in scannen
-    ArrayList<Vraag>Scanallevragen();
+    void Scanallevragen();
     //Allen Categorien in scannen
-    ArrayList<Categorie>ScanalleCatogorien();
+    void ScanalleCatogorien();
     //Allen testen in scannen
-    ArrayList<Test>ScanalleTesten();
+    void ScanalleTesten();
     //Nieuwe test maken
-    void MaaknieuweTest();
-    //Nieuwe categorie maken
-    void MaaknieuweCategorie();
-    //Nieuwe vraag maken
-    void MaaknieuweVraag();
 
 }

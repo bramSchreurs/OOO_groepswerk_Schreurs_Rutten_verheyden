@@ -2,44 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f48f7e6a-fa27-4d39-8977-e04a26122b25" name="Default Changelist" comment="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;out/production/OOO_groepswerk/application/Main.class&#10;#&#9;out/production/OOO_groepswerk/application/MovieInventory.class&#10;#&#9;out/production/OOO_groepswerk/domain/Movie.class&#10;#&#9;out/production/OOO_groepswerk/domain/MovieCompany.class&#10;#&#9;out/production/OOO_groepswerk/ui/MovieOverview$AddDummyFilmHandler.class&#10;#&#9;out/production/OOO_groepswerk/ui/MovieOverview.class&#10;#&#9;out/production/OOO_groepswerk/view/panels/AssesMainPane.class&#10;#&#9;out/production/OOO_groepswerk/view/panels/CategoryDetailPane.class&#10;#&#9;out/production/OOO_groepswerk/view/panels/CategoryOverviewPane.class&#10;#&#9;out/production/OOO_groepswerk/view/panels/MessagePane$1.class&#10;#&#9;out/production/OOO_groepswerk/view/panels/MessagePane.class&#10;#&#9;out/production/OOO_groepswerk/view/panels/QuestionDetailPane$AddStatementListener.class&#10;#&#9;out/production/OOO_groepswerk/view/panels/QuestionDetailPane$RemoveStatementListener.class&#10;#&#9;out/production/OOO_groepswerk/view/panels/QuestionDetailPane.class&#10;#&#9;out/production/OOO_groepswerk/view/panels/QuestionOverviewPane.class&#10;#&#9;out/production/OOO_groepswerk/view/panels/TestPane.class">
+      <change afterPath="$PROJECT_DIR$/out/production/OOO_groepswerk_Schreurs_Rutten_verheyden/application/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/OOO_groepswerk_Schreurs_Rutten_verheyden/controller/SelfTestController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/OOO_groepswerk_Schreurs_Rutten_verheyden/model/EvaluatieVorm.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/OOO_groepswerk_Schreurs_Rutten_verheyden/model/EvaluatieVormFactory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/OOO_groepswerk_Schreurs_Rutten_verheyden/model/EvaluatieVormFeedback.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/OOO_groepswerk_Schreurs_Rutten_verheyden/model/EvaluatieVormScore.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/OOO_groepswerk_Schreurs_Rutten_verheyden/model/FeedbackWijze$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/OOO_groepswerk_Schreurs_Rutten_verheyden/model/FeedbackWijze.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/OOO_groepswerk_Schreurs_Rutten_verheyden/model/Observer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/OOO_groepswerk_Schreurs_Rutten_verheyden/model/Subject.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/OOO_groepswerk_Schreurs_Rutten_verheyden/model/TestFacade.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/OOO_groepswerk_Schreurs_Rutten_verheyden/model/Vraag.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/OOO_groepswerk_Schreurs_Rutten_verheyden/view/panels/MessagePane.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/OOO_groepswerk_Schreurs_Rutten_verheyden/view/panels/QuestionDetailPane$AddStatementListener.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/OOO_groepswerk_Schreurs_Rutten_verheyden/view/panels/QuestionDetailPane$RemoveStatementListener.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/OOO_groepswerk_Schreurs_Rutten_verheyden/view/panels/QuestionDetailPane.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/OOO_groepswerk_Schreurs_Rutten_verheyden/view/panels/TestPane.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOO_groepswerk_Schreurs_Rutten_verheyden/application/MovieInventory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOO_groepswerk_Schreurs_Rutten_verheyden/application/MovieInventory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOO_groepswerk_Schreurs_Rutten_verheyden/controller/CancelSaveCategoryHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOO_groepswerk_Schreurs_Rutten_verheyden/controller/CancelSaveCategoryHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOO_groepswerk_Schreurs_Rutten_verheyden/controller/CategoryDetailHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOO_groepswerk_Schreurs_Rutten_verheyden/controller/CategoryDetailHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOO_groepswerk_Schreurs_Rutten_verheyden/controller/QuestionDetailHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOO_groepswerk_Schreurs_Rutten_verheyden/controller/QuestionDetailHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOO_groepswerk_Schreurs_Rutten_verheyden/controller/SaveCategoryHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOO_groepswerk_Schreurs_Rutten_verheyden/controller/SaveCategoryHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOO_groepswerk_Schreurs_Rutten_verheyden/domain/Movie.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOO_groepswerk_Schreurs_Rutten_verheyden/domain/Movie.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOO_groepswerk_Schreurs_Rutten_verheyden/domain/MovieCompany.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOO_groepswerk_Schreurs_Rutten_verheyden/domain/MovieCompany.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOO_groepswerk_Schreurs_Rutten_verheyden/model/Categorie.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOO_groepswerk_Schreurs_Rutten_verheyden/model/Categorie.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOO_groepswerk_Schreurs_Rutten_verheyden/model/EvaluatieVorm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOO_groepswerk_Schreurs_Rutten_verheyden/model/EvaluatieVorm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOO_groepswerk_Schreurs_Rutten_verheyden/model/EvaluatieVormFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOO_groepswerk_Schreurs_Rutten_verheyden/model/EvaluatieVormFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOO_groepswerk_Schreurs_Rutten_verheyden/model/EvaluatieVormFeedback.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOO_groepswerk_Schreurs_Rutten_verheyden/model/EvaluatieVormFeedback.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOO_groepswerk_Schreurs_Rutten_verheyden/model/EvaluatieVormScore.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOO_groepswerk_Schreurs_Rutten_verheyden/model/EvaluatieVormScore.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOO_groepswerk_Schreurs_Rutten_verheyden/model/FeedbackWijze.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOO_groepswerk_Schreurs_Rutten_verheyden/model/FeedbackWijze.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOO_groepswerk_Schreurs_Rutten_verheyden/model/Observer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOO_groepswerk_Schreurs_Rutten_verheyden/model/Observer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOO_groepswerk_Schreurs_Rutten_verheyden/model/Subject.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOO_groepswerk_Schreurs_Rutten_verheyden/model/Subject.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOO_groepswerk_Schreurs_Rutten_verheyden/model/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOO_groepswerk_Schreurs_Rutten_verheyden/model/Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOO_groepswerk_Schreurs_Rutten_verheyden/model/TestFacade.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOO_groepswerk_Schreurs_Rutten_verheyden/model/TestFacade.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOO_groepswerk_Schreurs_Rutten_verheyden/model/Vraag.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOO_groepswerk_Schreurs_Rutten_verheyden/model/Vraag.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOO_groepswerk_Schreurs_Rutten_verheyden/model/VraagType.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOO_groepswerk_Schreurs_Rutten_verheyden/model/VraagType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOO_groepswerk_Schreurs_Rutten_verheyden/model/databank/Databanken.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOO_groepswerk_Schreurs_Rutten_verheyden/model/databank/Databanken.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOO_groepswerk_Schreurs_Rutten_verheyden/model/databank/DatabaseWithtxt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOO_groepswerk_Schreurs_Rutten_verheyden/model/databank/DatabaseWithtxt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOO_groepswerk_Schreurs_Rutten_verheyden/model/databank/DatabasewithDB.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOO_groepswerk_Schreurs_Rutten_verheyden/model/databank/DatabasewithDB.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOO_groepswerk_Schreurs_Rutten_verheyden/ui/MovieOverview$AddDummyFilmHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOO_groepswerk_Schreurs_Rutten_verheyden/ui/MovieOverview$AddDummyFilmHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOO_groepswerk_Schreurs_Rutten_verheyden/ui/MovieOverview.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOO_groepswerk_Schreurs_Rutten_verheyden/ui/MovieOverview.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOO_groepswerk_Schreurs_Rutten_verheyden/view/panels/AssesMainPane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOO_groepswerk_Schreurs_Rutten_verheyden/view/panels/AssesMainPane.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOO_groepswerk_Schreurs_Rutten_verheyden/view/panels/CategoryDetailPane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOO_groepswerk_Schreurs_Rutten_verheyden/view/panels/CategoryDetailPane.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOO_groepswerk_Schreurs_Rutten_verheyden/view/panels/CategoryOverviewPane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOO_groepswerk_Schreurs_Rutten_verheyden/view/panels/CategoryOverviewPane.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOO_groepswerk_Schreurs_Rutten_verheyden/view/panels/QuestionOverviewPane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOO_groepswerk_Schreurs_Rutten_verheyden/view/panels/QuestionOverviewPane.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOO_groepswerk_Schreurs_Rutten_verheyden.iml" beforeDir="false" afterPath="$PROJECT_DIR$/OOO_groepswerk_Schreurs_Rutten_verheyden.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/EvaluatieVorm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/EvaluatieVorm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/EvaluatieVormFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/EvaluatieVormFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/EvaluatieVormFeedback.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/EvaluatieVormFeedback.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/EvaluatieVormScore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/EvaluatieVormScore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/FeedbackWijze.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/FeedbackWijze.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Observer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Observer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Subject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Subject.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/TestFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/TestFacade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Vraag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Vraag.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/databank/Databanken.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/databank/Databanken.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/databank/DatabaseWithtxt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/databank/DatabaseWithtxt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/databank/DatabasewithDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/databank/DatabasewithDB.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -96,13 +82,13 @@
     <session id="277833947">
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="56" />
+          <entry key="java" value="59" />
           <entry key="txt" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="56" />
+          <entry key="JAVA" value="59" />
           <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
@@ -140,9 +126,23 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/view/panels/QuestionOverviewPane.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="20" column="61" selection-start-line="20" selection-start-column="61" selection-end-line="20" selection-end-column="61" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1597#1598#0" expanded="true" />
+                <element signature="e#1638#1639#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/view/panels/CategoryOverviewPane.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-136">
+            <state relative-caret-position="391">
               <caret line="23" column="61" selection-start-line="23" selection-start-column="61" selection-end-line="23" selection-end-column="61" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -168,7 +168,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/application/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
+            <state relative-caret-position="289">
               <caret line="30" selection-start-line="30" selection-end-line="30" />
             </state>
           </provider>
@@ -192,17 +192,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/view/panels/QuestionDetailPane.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-765">
+            <state relative-caret-position="204">
               <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/view/panels/AssesMainPane.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/model/Categorie.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="31" selection-start-line="31" selection-end-line="31" />
+            <state relative-caret-position="136">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
         </entry>
@@ -249,12 +258,12 @@
         <option value="$PROJECT_DIR$/src/view/panels/CategoryOverviewPane.java" />
         <option value="$PROJECT_DIR$/src/model/databank/DatabaseWithtxt.java" />
         <option value="$PROJECT_DIR$/src/view/panels/CategoryDetailPane.java" />
-        <option value="$PROJECT_DIR$/src/view/panels/QuestionOverviewPane.java" />
         <option value="$PROJECT_DIR$/src/view/panels/QuestionDetailPane.java" />
         <option value="$PROJECT_DIR$/src/view/panels/MessagePane.java" />
         <option value="$PROJECT_DIR$/src/application/Main.java" />
         <option value="$PROJECT_DIR$/src/controller/SelfTestController.java" />
         <option value="$PROJECT_DIR$/src/view/panels/TestPane.java" />
+        <option value="$PROJECT_DIR$/src/view/panels/QuestionOverviewPane.java" />
       </list>
     </option>
   </component>
@@ -360,9 +369,9 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545658895643" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545661853327" />
     <property name="last_opened_file_path" value="C:/../school shit/BS2/processScheduling" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
@@ -402,6 +411,8 @@
       </method>
     </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="9" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="application.Main" />
       <module name="OOO_groepswerk_Schreurs_Rutten_verheyden" />
       <extension name="coverage">
@@ -459,7 +470,7 @@
       <workItem from="1543416056005" duration="48000" />
       <workItem from="1543848310030" duration="872000" />
       <workItem from="1544456426906" duration="6556000" />
-      <workItem from="1545496969525" duration="33625000" />
+      <workItem from="1545496969525" duration="36740000" />
     </task>
     <task id="LOCAL-00001" summary="Categories.txt toegevoegd">
       <created>1543249080792</created>
@@ -496,11 +507,18 @@
       <option name="project" value="LOCAL" />
       <updated>1544458835309</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;out/production/OOO_groepswerk/application/Main.class&#10;#&#9;out/production/OOO_groepswerk/application/MovieInventory.class&#10;#&#9;out/production/OOO_groepswerk/domain/Movie.class&#10;#&#9;out/production/OOO_groepswerk/domain/MovieCompany.class&#10;#&#9;out/production/OOO_groepswerk/ui/MovieOverview$AddDummyFilmHandler.class&#10;#&#9;out/production/OOO_groepswerk/ui/MovieOverview.class&#10;#&#9;out/production/OOO_groepswerk/view/panels/AssesMainPane.class&#10;#&#9;out/production/OOO_groepswerk/view/panels/CategoryDetailPane.class&#10;#&#9;out/production/OOO_groepswerk/view/panels/CategoryOverviewPane.class&#10;#&#9;out/production/OOO_groepswerk/view/panels/MessagePane$1.class&#10;#&#9;out/production/OOO_groepswerk/view/panels/MessagePane.class&#10;#&#9;out/production/OOO_groepswerk/view/panels/QuestionDetailPane$AddStatementListener.class&#10;#&#9;out/production/OOO_groepswerk/view/panels/QuestionDetailPane$RemoveStatementListener.class&#10;#&#9;out/production/OOO_groepswerk/view/panels/QuestionDetailPane.class&#10;#&#9;out/production/OOO_groepswerk/view/panels/QuestionOverviewPane.class&#10;#&#9;out/production/OOO_groepswerk/view/panels/TestPane.class">
+      <created>1545658990217</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1545658990217</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58756000" />
+    <option name="totallyTimeSpent" value="61871000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -513,9 +531,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2923077" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2923077" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -524,15 +541,15 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49068826" visible="true" weight="0.3250444" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.8639676" weight="0.9875666" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49635628" weight="0.39964476" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3285968" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.4977307" weight="0.3285968" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50931174" side_tool="true" visible="true" weight="0.3250444" />
-      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49635628" weight="0.3285968" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50526315" side_tool="true" visible="true" weight="0.3285968" />
+      <window_info active="true" anchor="bottom" id="Messages" order="10" sideWeight="0.49473685" visible="true" weight="0.3285968" />
       <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49959514" weight="0.3285968" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -653,13 +670,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/model/databank/Database.java" />
-    <entry file="file://$PROJECT_DIR$/src/view/panels/AssesMainPane.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/model/databank/DatabaseWithtxt.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -704,18 +714,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/panels/QuestionOverviewPane.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-272">
-          <caret line="20" column="61" selection-start-line="20" selection-start-column="61" selection-end-line="20" selection-end-column="61" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1584#1585#0" expanded="true" />
-            <element signature="e#1614#1615#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/view/panels/CategoryDetailPane.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -748,16 +746,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/panels/CategoryOverviewPane.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-136">
-          <caret line="23" column="61" selection-start-line="23" selection-start-column="61" selection-end-line="23" selection-end-column="61" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/view/panels/MessagePane.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="268">
@@ -766,20 +754,6 @@
             <element signature="e#1029#1030#0" expanded="true" />
             <element signature="e#1049#1050#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/panels/QuestionDetailPane.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-765">
-          <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -835,6 +809,56 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/panels/QuestionDetailPane.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Categorie.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/panels/CategoryOverviewPane.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="61" selection-start-line="23" selection-start-column="61" selection-end-line="23" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/panels/QuestionOverviewPane.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="20" column="61" selection-start-line="20" selection-start-column="61" selection-end-line="20" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1597#1598#0" expanded="true" />
+            <element signature="e#1638#1639#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-9/lib/src.zip!/java.base/java/lang/reflect/Method.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="563" selection-start-line="563" selection-end-line="563" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/view/panels/TestPane.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-459">
@@ -847,10 +871,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Categorie.java">
+    <entry file="file://$PROJECT_DIR$/src/view/panels/AssesMainPane.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        <state relative-caret-position="34">
+          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
         </state>
       </provider>
     </entry>
