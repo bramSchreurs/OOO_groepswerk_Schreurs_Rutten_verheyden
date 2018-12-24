@@ -1,11 +1,15 @@
 package model;
 
+import model.databank.Databanken;
+import model.databank.DatabaseWithtxt;
+
 import java.util.ArrayList;
 
 public class Categorie {
     String naam;
     ArrayList<Vraag> vragenLijst;
     String beschrijving;
+    DatabaseWithtxt db = new DatabaseWithtxt();
 
     public Categorie(String naam,String beschrijving){
         setNaam(naam);
@@ -37,6 +41,8 @@ public class Categorie {
     public void setVragenLijst(ArrayList vragenLijst) {
         this.vragenLijst = new ArrayList<Vraag>();
         //haal vragen uit database
+        db.getListQuestQuest();
+
     }
 
     @Override

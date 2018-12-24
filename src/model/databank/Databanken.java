@@ -17,9 +17,9 @@ public interface Databanken {
     // test uit databank halen
     void deletetest();
     //Categorie uit db halen
-    void deleteCategorie();
+    void deleteCategorie(int index);
     //Vraag uit db halen
-    void deleteVraag();
+    void deleteVraag(int index);
     // Allen vragen in scannen
     void Scanallevragen();
     //Allen Categorien in scannen

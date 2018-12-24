@@ -25,7 +25,7 @@ public class DatabaseWithtxt implements Databanken{
     File quest = new File("TextFiles\\Questions.txt");
     Scanner scanQuest = null;
     File cat = new File("TextFiles\\Categories.txt");
-    Scanner scanCat = null;
+    Scanner scanCat;
     Writer wr;
 
     public static void main(String[] args){
@@ -97,12 +97,20 @@ public class DatabaseWithtxt implements Databanken{
     }
 
     @Override
-    public void deleteCategorie() {
+    public void deleteCategorie(int index) {
+            String lineToRemove = "";
+            String currentLine;
+            lineToRemove += listCatName.get(index);
+            lineToRemove += "::";
+            lineToRemove += listCatDesc.get(index);
+
+        listCatName.remove(index);
+        listCatDesc.remove(index);
 
     }
 
     @Override
-    public void deleteVraag() {
+    public void deleteVraag(int index) {
 
     }
 
@@ -166,6 +174,26 @@ public class DatabaseWithtxt implements Databanken{
     @Override
     public void ScanalleTesten() {
 
+    }
+
+    public List<String> getListCatName(){
+        return listCatName;
+    }
+
+    public List<String> getListCatDesc(){
+        return listCatDesc;
+    }
+
+    public List<String> getListQuestQuest(){
+        return listQuestQuest;
+    }
+
+    public List<String> getListQuestAns(){
+        return listQuestAns;
+    }
+
+    public List<String> getListQuestPosAns(){
+        return listQuestPosAns;
     }
 
 }
