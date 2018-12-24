@@ -8,51 +8,51 @@ public class TestFacade {
     public  Vraag Createvraag(String vraagString, ArrayList correcteAntwoorden, ArrayList mogelijkeAntwoorden, String feedback,Categorie categorie, int score){
         return new Vraag(vraagString,correcteAntwoorden, mogelijkeAntwoorden,feedback,categorie,score);
     }
-
+    //Haal een categorie op van een vraag
     public Categorie VraaggetCategorie(Vraag vraag) {
         return vraag.categorie;
     }
-
+    //Set de categorie van een vraag
     public void VraagsetCategorie(Vraag vraag,Categorie categorie)
     {
        vraag.setCategorie(categorie);
     }
-
+    //Haal vragenid op van een vraag
     public int VraagsgetVragenId(Vraag vraag)
     {
         return vraag.getVragenId();
     }
-
+    //Set vragenid
     public void VraagssetVragenId(Vraag vraag)
     {
         vraag.setVragenId();
     }
-
+    // Vraagt de string met nde inhoud van de vraag
     public String VraagsgetVraagString(Vraag vraag)
     {
         return vraag.getVraagString();
     }
-
+    // Set de inhoud van de vraag
     public void VraagssetVraagString(Vraag vraag,String vraags)
     {
         vraag.setVraagString(vraags);
     }
-
+    // Haalt correcte antwoorden
     public ArrayList VraagsgetCorrecteAntwoorden(Vraag vraag)
     {
         return vraag.getCorrecteAntwoorden();
     }
-
+    //VraaggetCorrecteAntwoorden
     public void VraagssetCorrecteAntwoorden(Vraag vraag,ArrayList<String> strings)
     {
         vraag.setCorrecteAntwoorden(strings);
     }
-
+    // Alle mogelijken antwoorden halen
     public ArrayList VraagsgetMogelijkeAntwoorden(Vraag vraag)
     {
         return vraag.getMogelijkeAntwoorden();
     }
-
+    // setgeven anwtoorden
     public void VraagssetGegevenAntwoorden(Vraag vraag,ArrayList<String> strings)
     {
         vraag.setGegevenAntwoorden(strings);
@@ -78,11 +78,6 @@ public class TestFacade {
         vraag.setScore(score);
     }
 
-    public void VraagsaddVraagToDatabase(Vraag vraag)
-    {
-        vraag.addVraagToDatabase();
-
-    }
     //Test methodes
         //Testen maken
    public Test createTest(String naam){

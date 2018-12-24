@@ -2,30 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f48f7e6a-fa27-4d39-8977-e04a26122b25" name="Default Changelist" comment="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;out/production/OOO_groepswerk/application/Main.class&#10;#&#9;out/production/OOO_groepswerk/application/MovieInventory.class&#10;#&#9;out/production/OOO_groepswerk/domain/Movie.class&#10;#&#9;out/production/OOO_groepswerk/domain/MovieCompany.class&#10;#&#9;out/production/OOO_groepswerk/ui/MovieOverview$AddDummyFilmHandler.class&#10;#&#9;out/production/OOO_groepswerk/ui/MovieOverview.class&#10;#&#9;out/production/OOO_groepswerk/view/panels/AssesMainPane.class&#10;#&#9;out/production/OOO_groepswerk/view/panels/CategoryDetailPane.class&#10;#&#9;out/production/OOO_groepswerk/view/panels/CategoryOverviewPane.class&#10;#&#9;out/production/OOO_groepswerk/view/panels/MessagePane$1.class&#10;#&#9;out/production/OOO_groepswerk/view/panels/MessagePane.class&#10;#&#9;out/production/OOO_groepswerk/view/panels/QuestionDetailPane$AddStatementListener.class&#10;#&#9;out/production/OOO_groepswerk/view/panels/QuestionDetailPane$RemoveStatementListener.class&#10;#&#9;out/production/OOO_groepswerk/view/panels/QuestionDetailPane.class&#10;#&#9;out/production/OOO_groepswerk/view/panels/QuestionOverviewPane.class&#10;#&#9;out/production/OOO_groepswerk/view/panels/TestPane.class">
-      <change afterPath="$PROJECT_DIR$/out/production/OOO_groepswerk_Schreurs_Rutten_verheyden/application/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/OOO_groepswerk_Schreurs_Rutten_verheyden/controller/SelfTestController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/OOO_groepswerk_Schreurs_Rutten_verheyden/model/EvaluatieVorm.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/OOO_groepswerk_Schreurs_Rutten_verheyden/model/EvaluatieVormFactory.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/OOO_groepswerk_Schreurs_Rutten_verheyden/model/EvaluatieVormFeedback.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/OOO_groepswerk_Schreurs_Rutten_verheyden/model/EvaluatieVormScore.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/OOO_groepswerk_Schreurs_Rutten_verheyden/model/FeedbackWijze$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/OOO_groepswerk_Schreurs_Rutten_verheyden/model/FeedbackWijze.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/OOO_groepswerk_Schreurs_Rutten_verheyden/model/Observer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/OOO_groepswerk_Schreurs_Rutten_verheyden/model/Subject.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/OOO_groepswerk_Schreurs_Rutten_verheyden/model/TestFacade.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/OOO_groepswerk_Schreurs_Rutten_verheyden/model/Vraag.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/OOO_groepswerk_Schreurs_Rutten_verheyden/view/panels/MessagePane.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/OOO_groepswerk_Schreurs_Rutten_verheyden/view/panels/QuestionDetailPane$AddStatementListener.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/OOO_groepswerk_Schreurs_Rutten_verheyden/view/panels/QuestionDetailPane$RemoveStatementListener.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/OOO_groepswerk_Schreurs_Rutten_verheyden/view/panels/QuestionDetailPane.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/OOO_groepswerk_Schreurs_Rutten_verheyden/view/panels/TestPane.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OOO_groepswerk_Schreurs_Rutten_verheyden.iml" beforeDir="false" afterPath="$PROJECT_DIR$/OOO_groepswerk_Schreurs_Rutten_verheyden.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/EvaluatieVorm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/EvaluatieVorm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOO_groepswerk_Schreurs_Rutten_verheyden/model/TestFacade.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOO_groepswerk_Schreurs_Rutten_verheyden/model/TestFacade.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOO_groepswerk_Schreurs_Rutten_verheyden/model/Vraag.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOO_groepswerk_Schreurs_Rutten_verheyden/model/Vraag.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOO_groepswerk_Schreurs_Rutten_verheyden/model/databank/DatabasewithDB.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Categorie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Categorie.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/TestFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/TestFacade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/databank/Databanken.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/databank/Databanken.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Vraag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Vraag.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/databank/DatabaseWithtxt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/databank/DatabaseWithtxt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/databank/DatabasewithDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/databank/DatabasewithDB.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -82,25 +66,25 @@
     <session id="277833947">
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="59" />
+          <entry key="java" value="60" />
           <entry key="txt" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="59" />
+          <entry key="JAVA" value="60" />
           <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="6" />
-          <entry key="java" value="5564" />
+          <entry key="java" value="6010" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="5564" />
+          <entry key="JAVA" value="6010" />
           <entry key="PLAIN_TEXT" value="6" />
         </counts>
       </usages-collector>
@@ -119,8 +103,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/model/Vraag.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="30" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
+            <state relative-caret-position="442">
+              <caret line="26" column="30" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -168,22 +152,42 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/application/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="30" selection-start-line="30" selection-end-line="30" />
+            <state relative-caret-position="51">
+              <caret line="31" column="98" selection-start-line="31" selection-start-column="98" selection-end-line="31" selection-end-column="98" />
+              <folding>
+                <element signature="e#577#578#0" expanded="true" />
+                <element signature="e#596#597#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/controller/SelfTestController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="33" column="48" selection-start-line="33" selection-start-column="48" selection-end-line="33" selection-end-column="48" />
+            <state relative-caret-position="109">
+              <caret line="224" column="77" lean-forward="true" selection-start-line="224" selection-start-column="77" selection-end-line="224" selection-end-column="77" />
               <folding>
-                <element signature="e#4462#4463#0" expanded="true" />
-                <element signature="e#4494#4495#0" expanded="true" />
-                <element signature="e#4970#4971#0" expanded="true" />
-                <element signature="e#5000#5001#0" expanded="true" />
+                <element signature="e#1550#1551#0" expanded="true" />
+                <element signature="e#1590#1591#0" expanded="true" />
+                <element signature="e#1628#1629#0" expanded="true" />
+                <element signature="e#1660#1661#0" expanded="true" />
+                <element signature="e#1699#1700#0" expanded="true" />
+                <element signature="e#1735#1736#0" expanded="true" />
+                <element signature="e#1764#1765#0" expanded="true" />
+                <element signature="e#1796#1797#0" expanded="true" />
+                <element signature="e#1858#1859#0" expanded="true" />
+                <element signature="e#1907#1908#0" expanded="true" />
+                <element signature="e#2122#2123#0" expanded="true" />
+                <element signature="e#2165#2166#0" expanded="true" />
+                <element signature="e#2571#2579#0" expanded="true" />
+                <element signature="e#2630#2638#0" expanded="true" />
+                <element signature="e#3190#3198#0" expanded="true" />
+                <element signature="e#3249#3257#0" expanded="true" />
+                <element signature="e#5093#5094#0" expanded="true" />
+                <element signature="e#5126#5127#0" expanded="true" />
+                <element signature="e#5160#5161#0" expanded="true" />
+                <element signature="e#5193#5194#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -198,11 +202,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/view/panels/AssesMainPane.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+            <state relative-caret-position="102">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/view/panels/MessagePane.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="138">
+              <caret line="27" column="64" selection-start-line="27" selection-start-column="64" selection-end-line="27" selection-end-column="64" />
             </state>
           </provider>
         </entry>
@@ -210,8 +226,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/model/Categorie.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="204">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
             </state>
           </provider>
         </entry>
@@ -259,11 +275,11 @@
         <option value="$PROJECT_DIR$/src/model/databank/DatabaseWithtxt.java" />
         <option value="$PROJECT_DIR$/src/view/panels/CategoryDetailPane.java" />
         <option value="$PROJECT_DIR$/src/view/panels/QuestionDetailPane.java" />
-        <option value="$PROJECT_DIR$/src/view/panels/MessagePane.java" />
-        <option value="$PROJECT_DIR$/src/application/Main.java" />
-        <option value="$PROJECT_DIR$/src/controller/SelfTestController.java" />
         <option value="$PROJECT_DIR$/src/view/panels/TestPane.java" />
         <option value="$PROJECT_DIR$/src/view/panels/QuestionOverviewPane.java" />
+        <option value="$PROJECT_DIR$/src/application/Main.java" />
+        <option value="$PROJECT_DIR$/src/view/panels/MessagePane.java" />
+        <option value="$PROJECT_DIR$/src/controller/SelfTestController.java" />
       </list>
     </option>
   </component>
@@ -369,9 +385,9 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545661853327" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545667046495" />
     <property name="last_opened_file_path" value="C:/../school shit/BS2/processScheduling" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
@@ -470,7 +486,7 @@
       <workItem from="1543416056005" duration="48000" />
       <workItem from="1543848310030" duration="872000" />
       <workItem from="1544456426906" duration="6556000" />
-      <workItem from="1545496969525" duration="36740000" />
+      <workItem from="1545496969525" duration="41747000" />
     </task>
     <task id="LOCAL-00001" summary="Categories.txt toegevoegd">
       <created>1543249080792</created>
@@ -514,11 +530,18 @@
       <option name="project" value="LOCAL" />
       <updated>1545658990217</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;out/production/OOO_groepswerk/application/Main.class&#10;#&#9;out/production/OOO_groepswerk/application/MovieInventory.class&#10;#&#9;out/production/OOO_groepswerk/domain/Movie.class&#10;#&#9;out/production/OOO_groepswerk/domain/MovieCompany.class&#10;#&#9;out/production/OOO_groepswerk/ui/MovieOverview$AddDummyFilmHandler.class&#10;#&#9;out/production/OOO_groepswerk/ui/MovieOverview.class&#10;#&#9;out/production/OOO_groepswerk/view/panels/AssesMainPane.class&#10;#&#9;out/production/OOO_groepswerk/view/panels/CategoryDetailPane.class&#10;#&#9;out/production/OOO_groepswerk/view/panels/CategoryOverviewPane.class&#10;#&#9;out/production/OOO_groepswerk/view/panels/MessagePane$1.class&#10;#&#9;out/production/OOO_groepswerk/view/panels/MessagePane.class&#10;#&#9;out/production/OOO_groepswerk/view/panels/QuestionDetailPane$AddStatementListener.class&#10;#&#9;out/production/OOO_groepswerk/view/panels/QuestionDetailPane$RemoveStatementListener.class&#10;#&#9;out/production/OOO_groepswerk/view/panels/QuestionDetailPane.class&#10;#&#9;out/production/OOO_groepswerk/view/panels/QuestionOverviewPane.class&#10;#&#9;out/production/OOO_groepswerk/view/panels/TestPane.class">
+      <created>1545662013404</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1545662013404</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61871000" />
+    <option name="totallyTimeSpent" value="66878000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -541,15 +564,15 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.8639676" weight="0.9875666" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.5020243" visible="true" weight="0.37477797" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49635628" weight="0.39964476" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3285968" />
-      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.4977307" weight="0.3285968" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49716598" weight="0.3285968" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50526315" side_tool="true" visible="true" weight="0.3285968" />
-      <window_info active="true" anchor="bottom" id="Messages" order="10" sideWeight="0.49473685" visible="true" weight="0.3285968" />
+      <window_info active="true" anchor="bottom" id="Event Log" order="9" sideWeight="0.4979757" side_tool="true" visible="true" weight="0.37477797" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49392712" weight="0.3285968" />
       <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49959514" weight="0.3285968" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -746,17 +769,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/panels/MessagePane.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="37" column="65" selection-start-line="37" selection-start-column="65" selection-end-line="37" selection-end-column="65" />
-          <folding>
-            <element signature="e#1029#1030#0" expanded="true" />
-            <element signature="e#1049#1050#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/model/Test.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -791,28 +803,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/model/Vraag.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="30" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/SelfTestController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="33" column="48" selection-start-line="33" selection-start-column="48" selection-end-line="33" selection-end-column="48" />
-          <folding>
-            <element signature="e#4462#4463#0" expanded="true" />
-            <element signature="e#4494#4495#0" expanded="true" />
-            <element signature="e#4970#4971#0" expanded="true" />
-            <element signature="e#5000#5001#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        <state relative-caret-position="442">
+          <caret line="26" column="30" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -825,8 +817,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/model/Categorie.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="204">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>
@@ -871,10 +863,60 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="31" column="98" selection-start-line="31" selection-start-column="98" selection-end-line="31" selection-end-column="98" />
+          <folding>
+            <element signature="e#577#578#0" expanded="true" />
+            <element signature="e#596#597#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/view/panels/AssesMainPane.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+        <state relative-caret-position="102">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/panels/MessagePane.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="27" column="64" selection-start-line="27" selection-start-column="64" selection-end-line="27" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/SelfTestController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="224" column="77" lean-forward="true" selection-start-line="224" selection-start-column="77" selection-end-line="224" selection-end-column="77" />
+          <folding>
+            <element signature="e#1550#1551#0" expanded="true" />
+            <element signature="e#1590#1591#0" expanded="true" />
+            <element signature="e#1628#1629#0" expanded="true" />
+            <element signature="e#1660#1661#0" expanded="true" />
+            <element signature="e#1699#1700#0" expanded="true" />
+            <element signature="e#1735#1736#0" expanded="true" />
+            <element signature="e#1764#1765#0" expanded="true" />
+            <element signature="e#1796#1797#0" expanded="true" />
+            <element signature="e#1858#1859#0" expanded="true" />
+            <element signature="e#1907#1908#0" expanded="true" />
+            <element signature="e#2122#2123#0" expanded="true" />
+            <element signature="e#2165#2166#0" expanded="true" />
+            <element signature="e#2571#2579#0" expanded="true" />
+            <element signature="e#2630#2638#0" expanded="true" />
+            <element signature="e#3190#3198#0" expanded="true" />
+            <element signature="e#3249#3257#0" expanded="true" />
+            <element signature="e#5093#5094#0" expanded="true" />
+            <element signature="e#5126#5127#0" expanded="true" />
+            <element signature="e#5160#5161#0" expanded="true" />
+            <element signature="e#5193#5194#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -935,6 +977,7 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

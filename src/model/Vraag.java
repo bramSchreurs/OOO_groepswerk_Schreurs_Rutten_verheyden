@@ -1,5 +1,7 @@
 package model;
 
+import model.databank.DatabaseWithtxt;
+
 import java.util.ArrayList;
 
 public class Vraag {
@@ -12,6 +14,7 @@ public class Vraag {
     Categorie categorie;
     Enum TypeVraag;
     int score;
+    DatabaseWithtxt db = new DatabaseWithtxt();
 
     public Vraag(String vraagString, ArrayList correcteAntwoorden, ArrayList mogelijkeAntwoorden, String feedback,Categorie categorie, int score) {
         vragenIdStatic += 1;
@@ -20,7 +23,6 @@ public class Vraag {
         setGegevenAntwoorden(mogelijkeAntwoorden);
         setFeedback(feedback);
         setScore(score);
-        addVraagToDatabase();
         setVraagString(vraagString);
         setCategorie(categorie);
 
@@ -82,10 +84,7 @@ public class Vraag {
         this.score = score;
     }
 
-    public void addVraagToDatabase(){
-        //todo
 
-    }
 
 
 
