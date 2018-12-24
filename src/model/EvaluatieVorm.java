@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public interface EvaluatieVorm {
 
-    String getEvaluatie();
+    String getEvaluatie();//todo
 
 
 }

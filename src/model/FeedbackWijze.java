@@ -15,4 +15,13 @@ public enum FeedbackWijze {
 
     FeedbackWijze(String classname){this.clasname=classname;} {
     }
+    public String toString(){
+        switch(this){
+            case FEEDBACK:
+                return "Feedback";
+            case SCORE:
+                return "Score";
+        }
+        return null;
+    }
 }
