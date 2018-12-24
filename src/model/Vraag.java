@@ -23,7 +23,6 @@ public class Vraag {
         setGegevenAntwoorden(mogelijkeAntwoorden);
         setFeedback(feedback);
         setScore(score);
-        addVraagToDatabase();
         setVraagString(vraagString);
         setCategorie(categorie);
 
@@ -85,10 +84,7 @@ public class Vraag {
         this.score = score;
     }
 
-    public void addVraagToDatabase(){
-        db.Addvraag(String vraag, );
 
-    }
 
 
 

@@ -6,6 +6,7 @@ import model.Categorie;
 import model.Test;
 import model.TestFacade;
 import model.Vraag;
+import model.databank.Databanken;
 import model.databank.DatabaseWithtxt;
 import view.panels.CategoryOverviewPane;
 import view.panels.QuestionOverviewPane;
@@ -15,7 +16,7 @@ import java.util.Collections;
 import java.util.List;
 
 public class SelfTestController {
-    DatabaseWithtxt database;
+    Databanken database;
     Test test = new Test("voedseltest");
     CategoryOverviewPane categorieOverviewPane;
     QuestionOverviewPane questionOverviewPane;
@@ -25,7 +26,7 @@ public class SelfTestController {
     ArrayList<String> alleAntwoorden;
     private int counter = 0;
 
-    public SelfTestController(DatabaseWithtxt database){
+    public SelfTestController(Databanken database){
         setDatabase(database);
         setTest(test);
         correcteAntwoorden = new ArrayList<String>();
@@ -39,7 +40,7 @@ public class SelfTestController {
         test.addVraag(vraag2);
     }
 
-    public void setDatabase(DatabaseWithtxt database) {
+    public void setDatabase(Databanken database) {
         this.database = database;
     }
 
@@ -47,7 +48,7 @@ public class SelfTestController {
         this.test = test;
     }
 
-    public DatabaseWithtxt getDatabase() {
+    public Databanken getDatabase() {
         return this.database;
     }
 
@@ -111,8 +112,7 @@ public class SelfTestController {
     }
 
     public void addCategoryToDatabase(String naam, String categorie){
-        getDatabase().AddnewCategorie();
-        //comment
+        getDatabase().AddnewCategorie(naam, categorie);
 
     }
 

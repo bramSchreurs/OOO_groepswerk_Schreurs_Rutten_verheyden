@@ -78,11 +78,6 @@ public class TestFacade {
         vraag.setScore(score);
     }
 
-    public void VraagsaddVraagToDatabase(Vraag vraag)
-    {
-        vraag.addVraagToDatabase();
-
-    }
     //Test methodes
         //Testen maken
    public Test createTest(String naam){
