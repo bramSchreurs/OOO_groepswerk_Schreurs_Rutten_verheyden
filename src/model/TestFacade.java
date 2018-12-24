@@ -139,6 +139,24 @@ public class TestFacade {
         test.notifyObservers();
 
     }
+    //Observer methods
+    public void Observerupdate(Observer observer){
+        observer.update();
+    }
+    //Subject methods
+    public void SubjectaddObserver(Subject subject,Observer observer){
+        subject.addObserver(observer);
+    }
+
+    public void SubjectremoveObserver(Subject subject,Observer observer){
+        subject.removeObserver(observer);
+    }
+
+
+    public void SubjectnotifyObservers(Subject subject){
+        subject.notifyObservers();
+    }
+
     //Categorie
         //Catogorie aanmaken
     public Categorie createCategorie(String naam,String beschrijving)
