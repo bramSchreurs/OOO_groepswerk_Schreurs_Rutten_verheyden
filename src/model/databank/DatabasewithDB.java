@@ -13,12 +13,12 @@ public class DatabasewithDB implements  Databanken {
     }
 
     @Override
-    public void AddnewCategorie() {
+    public void AddnewCategorie(String naam, String beschrijving) {
 
     }
 
     @Override
-    public void Addvraag() {
+    public void Addvraag(String vraag, ArrayList<String> mogAntwoorden, ArrayList<String> jusAntwoorden) {
 
     }
 
@@ -38,32 +38,17 @@ public class DatabasewithDB implements  Databanken {
     }
 
     @Override
-    public ArrayList<Vraag> Scanallevragen() {
-        return null;
-    }
-
-    @Override
-    public ArrayList<Categorie> ScanalleCatogorien() {
-        return null;
-    }
-
-    @Override
-    public ArrayList<Test> ScanalleTesten() {
-        return null;
-    }
-
-    @Override
-    public void MaaknieuweTest() {
+    public void Scanallevragen() {
 
     }
 
     @Override
-    public void MaaknieuweCategorie() {
+    public void ScanalleCatogorien() {
 
     }
 
     @Override
-    public void MaaknieuweVraag() {
+    public void ScanalleTesten() {
 
     }
 }
