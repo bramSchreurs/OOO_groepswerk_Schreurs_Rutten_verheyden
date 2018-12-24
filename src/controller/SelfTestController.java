@@ -179,8 +179,7 @@ public class SelfTestController {
         testFacade.Createvraag(vraagString, correcteAntwoorden,mogelijkeAntwoorden,feedBack,categorie,0);
         this.correcteAntwoorden.clear();
         this.mogelijkeAntwoorden.clear();
-        //getDatabase().Addvraag(vraagString,this.correcteAntwoorden,this.mogelijkeAntwoorden,feedBack,categorie,0);
-    }
+}
 
     public void addCorrectAntwoord(String antwoord){
         this.correcteAntwoorden.add(antwoord);
