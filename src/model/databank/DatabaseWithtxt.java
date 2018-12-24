@@ -98,7 +98,7 @@ public class DatabaseWithtxt implements Databanken{
 
     @Override
     public void deleteCategorie() {
-        
+
     }
 
     @Override
