@@ -23,12 +23,12 @@ public class Main extends Application {
 			//camembert
 			SelfTestController controller = new SelfTestController(new DatabaseWithtxt());
 			QuestionOverviewPane questionOverviewPane = new QuestionOverviewPane(controller);
-			QuestionDetailPane questionDetailPane = new QuestionDetailPane(controller);
+
 
 			CategoryOverviewPane categoryOverviewPanel = new CategoryOverviewPane(controller);
 
 
-			TestPane testPane = new TestPane();
+
 			MessagePane messagePane = new MessagePane();
 
 			Group root = new Group();

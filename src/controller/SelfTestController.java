@@ -11,6 +11,8 @@ import view.panels.CategoryOverviewPane;
 import view.panels.QuestionOverviewPane;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 public class SelfTestController {
     DatabaseWithtxt database;
@@ -20,12 +22,21 @@ public class SelfTestController {
     TestFacade  testFacade= new TestFacade();
     ArrayList<String> correcteAntwoorden;
     ArrayList<String> mogelijkeAntwoorden;
+    ArrayList<String> alleAntwoorden;
+    private int counter = 0;
 
     public SelfTestController(DatabaseWithtxt database){
         setDatabase(database);
         setTest(test);
         correcteAntwoorden = new ArrayList<String>();
+        correcteAntwoorden.add("zuivelProduct");
         mogelijkeAntwoorden = new ArrayList<String>();
+        mogelijkeAntwoorden.add("Vleesproduct");
+        Vraag vraag = new Vraag("Kaas?",correcteAntwoorden,mogelijkeAntwoorden,"Ja zuivelproduct he",new Categorie("Voedsel","Eetbare dingen"),0);
+        Vraag vraag2 = new Vraag("Worst?",correcteAntwoorden,mogelijkeAntwoorden,"Ja vleesproduct he",new Categorie("Voedsel","Eetbare dingen"),0);
+
+        test.addVraag(vraag);
+        test.addVraag(vraag2);
     }
 
     public void setDatabase(DatabaseWithtxt database) {
@@ -137,6 +148,56 @@ public class SelfTestController {
 
     public void addMogelijkAntwoord(String antwoord){
         this.mogelijkeAntwoorden.add(antwoord);
+
+    }
+
+    public void raiseCounter(){
+        this.counter += 1;
+    }
+    public void lowerCounter(){
+        this.counter -=1;
+    }
+
+    public String getNextQuestionString() {
+        if (counter>=getTest().getVragen().size()){
+            return null;
+        }
+        if (getTest().getVragen().get(counter).getVraagString()==null || getTest().getVragen().get(counter).getVraagString().isEmpty()){
+            return null;
+        }
+        System.out.println(getTest().getVragen().get(counter).getVraagString());
+        String vraag =  getTest().getVragen().get(counter).getVraagString();
+        raiseCounter();
+        return vraag;
+    }
+
+    public ArrayList<String> getAlleAntwoorden() {
+        alleAntwoorden =new ArrayList<String>();
+        for (String antwoord:correcteAntwoorden) {
+            alleAntwoorden.add(antwoord);
+
+        }
+        for (String antwoord1: mogelijkeAntwoorden) {
+            alleAntwoorden.add(antwoord1);
+
+        }
+        Collections.shuffle(alleAntwoorden);
+        return alleAntwoorden;
+    }
+
+    public void submitAnswer(List<String> antwoorden) {
+        if (counter >= test.getVragen().size())
+        {
+            return;
+        }
+        test.getVragen().get(counter).setScore(1);
+        for (String antwoord:antwoorden) {
+            if (!test.getVragen().get(counter).getCorrecteAntwoorden().contains(antwoord)){
+                test.getVragen().get(counter).setScore(0);
+            }
+
+        }
+
 
     }
 }
