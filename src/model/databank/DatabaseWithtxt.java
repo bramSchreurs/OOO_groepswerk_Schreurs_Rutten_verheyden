@@ -1,22 +1,29 @@
 package model.databank;
 
 import model.Categorie;
-import model.Test;
 import model.Vraag;
 
 import java.io.*;
-import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
 public class DatabaseWithtxt implements Databanken{
-    private static String catLine, questLine;
-    private static List<String> listCatName = new ArrayList<>();
-    private static List<String> listCatDesc = new ArrayList<>();
-    private static List<String> listQuestQuest = new ArrayList<>();
-    private static List<String> listQuestAns = new ArrayList<>();
-    private static List<String> listQuestPosAns = new ArrayList<>();
+    private String catLine, questLine;
+    private List<String> listCatName = new ArrayList<>();
+    private List<String> listCatDesc = new ArrayList<>();
+    private List<String> listQuestQuest = new ArrayList<>();
+    private ArrayList<List<String>> listQuestAns = new ArrayList<>();
+    private ArrayList<List<String>> listQuestPosAns = new ArrayList<>();
+    private List<String> listQuestCat = new ArrayList<>();
+    private List<String> listQuestFeedback = new ArrayList<>();
+    private List<String> listQuestScore = new ArrayList<>();
+    private List<Vraag> vragenlijst = new ArrayList<>();
+    private List<Categorie> categorielijst = new ArrayList<>();
+    private ArrayList<String> mogAns = new ArrayList<>();
+    private ArrayList<String> justAns = new ArrayList<>();
+    private Categorie categorie;
+    private Vraag vraag;
     public DatabaseWithtxt() {
 
 
@@ -81,6 +88,15 @@ public class DatabaseWithtxt implements Databanken{
                     wr.flush();
                 }
             }
+            wr.append("::");
+            wr.flush();
+            wr.append(feedback);
+            wr.append("::");
+            wr.flush();
+            wr.append(categorie);
+            wr.append("::");
+            wr.flush();
+            wr.append(Integer.toString(0));
             wr.close();
         } catch (IOException e) {
             e.printStackTrace();
@@ -94,7 +110,7 @@ public class DatabaseWithtxt implements Databanken{
 
     @Override
     public void deleteCategorie(int index) {
-            String lineToRemove = "";
+            /*String lineToRemove = "";
             String currentLine;
             lineToRemove += listCatName.get(index);
             lineToRemove += "::";
@@ -102,6 +118,7 @@ public class DatabaseWithtxt implements Databanken{
 
         listCatName.remove(index);
         listCatDesc.remove(index);
+        */
 
     }
 
@@ -116,30 +133,43 @@ public class DatabaseWithtxt implements Databanken{
             scanQuest = new Scanner(quest);
             while (scanQuest.hasNext()){
                 questLine = scanQuest.nextLine();
-                String[] parts = questLine.split("::", 3);
+                String[] parts = questLine.split("::", 5);
                 listQuestQuest.add(parts[0]);
-                listQuestPosAns.add(parts[1]);
-                listQuestAns.add(parts[2]);
-            }
-
-            System.out.println("\nAll questions:\n");
-            for (String n : listQuestQuest){
-                System.out.println(n);
-            }
-            System.out.println("\nAll answers:\n");
-            for (String d : listQuestAns){
-                System.out.println(d);
-            }
-            System.out.println("\nAll possible answers:\n");
-            for (String d : listQuestPosAns){
-                System.out.println(d);
+                String[] posAns = parts[1].split(", ");
+                for (String s : posAns){
+                    mogAns.add(s);
+                }
+                listQuestPosAns.add(mogAns);
+                String[] ans = parts[2].split(", ");
+                for (String s : ans){
+                    justAns.add(s);
+                }
+                listQuestAns.add(justAns);
+                listQuestFeedback.add(parts[3]);
+                listQuestCat.add(parts[4]);
+                listQuestScore.add(parts[5]);
             }
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
         scanQuest.close();
     }
-
+    public List<Vraag> maakVragenLijst(){
+        for (int i = 0; i<listQuestQuest.size(); i++){
+            vraag.setVraagString(listQuestQuest.get(i));
+            vraag.setCorrecteAntwoorden(listQuestPosAns.get(i));
+            vraag.setGegevenAntwoorden(listQuestAns.get(i));
+            vraag.setFeedback(listQuestFeedback.get(i));
+            for (Categorie c : categorielijst){
+                if (c.getNaam().equals(listQuestCat.get(i))){
+                    vraag.setCategorie(c);
+                }
+            }
+            vraag.setScore(0);
+            vragenlijst.add(vraag);
+        }
+        return vragenlijst;
+    }
     @Override
     public void ScanalleCatogorien()
     {
@@ -166,6 +196,14 @@ public class DatabaseWithtxt implements Databanken{
         scanCat.close();
     }
 
+    public List<Categorie> maakCategorieLijst(){
+        for (int i = 0; i<listCatName.size(); i++){
+            categorie.setNaam(listCatName.get(i));
+            categorie.setNaam(listCatDesc.get(i));
+            categorielijst.add(categorie);
+        }
+        return categorielijst;
+    }
 
     @Override
     public void ScanalleTesten() {
@@ -184,12 +222,25 @@ public class DatabaseWithtxt implements Databanken{
         return listQuestQuest;
     }
 
-    public List<String> getListQuestAns(){
+    public List<List<String>> getListQuestAns(){
         return listQuestAns;
     }
 
-    public List<String> getListQuestPosAns(){
+    public List<String> getListQuestCat(){
+        return listQuestCat;
+    }
+
+    public List<String> getListQuestFeedback(){
+        return listQuestFeedback;
+    }
+
+    public List<String> getListQuestScore(){
+        return listQuestScore;
+    }
+
+    public List<List<String>> getListQuestPosAns(){
         return listQuestPosAns;
     }
+
 
 }

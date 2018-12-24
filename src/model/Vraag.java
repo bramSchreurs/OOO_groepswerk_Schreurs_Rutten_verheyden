@@ -3,13 +3,14 @@ package model;
 import model.databank.DatabaseWithtxt;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Vraag {
     static int vragenIdStatic = 0;
     int vragenId;
     String vraagString;
-    ArrayList correcteAntwoorden;
-    ArrayList mogelijkeAntwoorden;
+    List correcteAntwoorden;
+    List mogelijkeAntwoorden;
     String Feedback;
     Categorie categorie;
     Enum TypeVraag;
@@ -52,19 +53,19 @@ public class Vraag {
         this.vraagString = vraagString;
     }
 
-    public ArrayList getCorrecteAntwoorden() {
+    public List getCorrecteAntwoorden() {
         return correcteAntwoorden;
     }
 
-    public void setCorrecteAntwoorden(ArrayList<String> strings) {
+    public void setCorrecteAntwoorden(List<String> strings) {
         this.correcteAntwoorden = strings;
     }
 
-    public ArrayList getMogelijkeAntwoorden() {
+    public List getMogelijkeAntwoorden() {
         return mogelijkeAntwoorden;
     }
 
-    public void setGegevenAntwoorden(ArrayList<String> strings) {
+    public void setGegevenAntwoorden(List<String> strings) {
         this.mogelijkeAntwoorden = strings;
     }
 

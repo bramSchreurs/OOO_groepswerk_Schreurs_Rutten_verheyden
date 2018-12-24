@@ -24,9 +24,13 @@ public class SelfTestController {
     ArrayList<String> mogelijkeAntwoorden;
     ArrayList<String> alleAntwoorden;
     private int counter = 0;
+    List<Vraag> vragenlijst;
+    List<Categorie> categorielijst;
 
     public SelfTestController(DatabaseWithtxt database){
         setDatabase(database);
+        vragenlijst = database.maakVragenLijst();
+        categorielijst = database.maakCategorieLijst();
         setTest(test);
         correcteAntwoorden = new ArrayList<String>();
         correcteAntwoorden.add("zuivelProduct");
@@ -37,6 +41,10 @@ public class SelfTestController {
 
         test.addVraag(vraag);
         test.addVraag(vraag2);
+        /*for (Vraag v : vragenlijst){
+            test.addVraag(v);
+        }
+        */
     }
 
     public void setDatabase(DatabaseWithtxt database) {
@@ -79,14 +87,21 @@ public class SelfTestController {
         kaas.add("kaas");
         worst.add("worst");
         Vraag vraag = new Vraag("Wat is lekker?", kaas, worst,"fout",categorie,0);
-         test.addVraag(vraag);
+        test.addVraag(vraag);
         for (Vraag vraag2:test.getVragen()) {
             list.add(vraag2);
-
         }
-
-
         return list;
+
+
+        /*for (Vraag v : vragenlijst){
+            test.addVraag(v);
+        }
+        for (Vraag vrg : test.getVragen()){
+            list.add(vrg);
+        }
+        return list;
+        */
 
     }
 
@@ -102,10 +117,18 @@ public class SelfTestController {
         test.addCategorie(categorie);
         for (Categorie categorie1:test.getCategorieën()) {
             list.add(categorie1);
-
         }
 
-
+        /*for (Vraag v : vragenlijst){
+            test.addVraag(v);
+        }
+        for (Categorie c : categorielijst){
+            test.addCategorie(c);
+        }
+        for (Categorie ctg : test.getCategorieën()){
+            list.add(ctg);
+        }
+        */
         return list;
 
     }
