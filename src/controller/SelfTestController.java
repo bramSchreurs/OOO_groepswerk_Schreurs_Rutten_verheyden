@@ -112,7 +112,7 @@ public class SelfTestController {
 
     public void addCategoryToDatabase(String naam, String categorie){
         getDatabase().AddnewCategorie();
-
+        //comment
 
     }
 
