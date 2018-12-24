@@ -1,4 +1,2 @@
-Design principles::The SOLID design principles
-Design patterns::Design patterns discussed this year
-Java::Java extra's
-UML::Technique of drawing a class diagram
+
+KAAS::UML

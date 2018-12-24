@@ -13,7 +13,7 @@ public interface Databanken {
     // nieuwe Categorie in databank steken
     void AddnewCategorie(String naam, String beschrijving);
     //Nieuwe vraag in databank steken
-    void Addvraag(String vraag, ArrayList<String> mogAntwoorden, ArrayList<String> jusAntwoorden);
+    void Addvraag(String vraag, ArrayList<String> mogAntwoorden, ArrayList<String> jusAntwoorden, String feedback, String categorie, int score);
     // test uit databank halen
     void deletetest();
     //Categorie uit db halen

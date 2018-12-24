@@ -18,7 +18,7 @@ public class DatabasewithDB implements  Databanken {
     }
 
     @Override
-    public void Addvraag(String vraag, ArrayList<String> mogAntwoorden, ArrayList<String> jusAntwoorden) {
+    public void Addvraag(String vraag, ArrayList<String> mogAntwoorden, ArrayList<String> jusAntwoorden, String feedback, String categorie, int score) {
 
     }
 

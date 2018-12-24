@@ -1,6 +1,7 @@
 package model;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class TestFacade {
     // Vragen methodes
@@ -38,7 +39,7 @@ public class TestFacade {
         vraag.setVraagString(vraags);
     }
     // Haalt correcte antwoorden
-    public ArrayList VraagsgetCorrecteAntwoorden(Vraag vraag)
+    public List VraagsgetCorrecteAntwoorden(Vraag vraag)
     {
         return vraag.getCorrecteAntwoorden();
     }
@@ -48,7 +49,7 @@ public class TestFacade {
         vraag.setCorrecteAntwoorden(strings);
     }
     // Alle mogelijken antwoorden halen
-    public ArrayList VraagsgetMogelijkeAntwoorden(Vraag vraag)
+    public List VraagsgetMogelijkeAntwoorden(Vraag vraag)
     {
         return vraag.getMogelijkeAntwoorden();
     }
