@@ -163,5 +163,37 @@ public class TestFacade {
         {
         return new Categorie(naam,beschrijving);
     }
+    public String CategoriegetBeschrijving(Categorie cat)
+    {
+        return cat.getBeschrijving();
+    }
 
+    public void CategoriesetBeschrijving(String beschrijving,Categorie cat)
+    {
+        cat.setBeschrijving(beschrijving);
+    }
+
+    public String CategoriegetNaam(Categorie cat) {
+
+        return cat.getNaam();
+    }
+
+    public void CategoriesetNaam(String naam,Categorie cat) {
+        cat.setNaam(naam);
+    }
+
+
+    public ArrayList CategoriegetVragenLijst(Categorie cat) {
+       return cat.getVragenLijst();
+    }
+
+    public void CategoriesetVragenLijst(ArrayList vragenLijst,Categorie cat) {
+        cat.setVragenLijst(vragenLijst);
+    }
+
+
+    public String CategorietoString(Categorie cat){
+        return cat.toString();
+    }
 }
+
