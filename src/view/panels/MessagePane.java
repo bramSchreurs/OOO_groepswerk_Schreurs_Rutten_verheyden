@@ -8,6 +8,7 @@ import javafx.event.EventHandler;
 import javafx.geometry.HPos;
 import javafx.geometry.Insets;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.layout.Border;
 import javafx.scene.layout.BorderStroke;
 import javafx.scene.layout.BorderStrokeStyle;
@@ -19,8 +20,12 @@ import model.databank.DatabaseWithtxt;
 
 public class MessagePane extends GridPane {
 	private Button testButton;
-	
-	public MessagePane (){
+	private SelfTestController selfTestController;
+	private Label categorieEnUitslag;
+	public MessagePane (SelfTestController selfTestController){
+		this.selfTestController = selfTestController;
+		categorieEnUitslag = new Label();
+		categorieEnUitslag.setText(selfTestController.getResults());
 	    setBorder(new Border(new BorderStroke(Color.BLACK, 
 	            BorderStrokeStyle.SOLID, CornerRadii.EMPTY, BorderWidths.DEFAULT)));
 
@@ -35,7 +40,7 @@ public class MessagePane extends GridPane {
 	}
 
 	private void createTestPane() {
-		new TestPane(new SelfTestController(new DatabaseWithtxt()));
+		new TestPane(selfTestController);
 	}
 
 }
